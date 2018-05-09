@@ -7,12 +7,10 @@
     char* ssid     = "{unknown}";
     const char* password = "jkw829kw91&";
      
-    //  http://ice1.somafm.com/u80s-128-mp3
-    //do not use  http:// but just the link
+
      String host = "icecast.omroep.nl";
      String path = "/3fm-bb-mp3";
-    //const char *path = "/doomed-128-mp3";
-    int httpPort = 80;
+     int httpPort = 80;
      
     // These are the pins used
     #define VS1053_RESET   D3     // VS1053 reset pin (not used!)
@@ -65,7 +63,14 @@
      
       Serial.println("WiFi connected");  
       Serial.println("IP address: ");  Serial.println(WiFi.localIP());
-     
+
+      Serial.println("web radio path");
+      while(Serial.available()==0)
+      {
+        
+        }
+        path=Serial.readString();
+        Serial.println(path);
      
       /************************* INITIALIZE STREAM */
       Serial.print("connecting to ");  Serial.println(host);
@@ -101,6 +106,7 @@
           server.on("/stop", StopMusic);
           server.on("/volumeplus", VolumePlus);
           server.on("/volumemin", VolumeMin);
+          server.onNotFound(handleNotFound);   
      
     }
      
@@ -110,11 +116,8 @@
 
      
     void loop(void) {
+      
  server.handleClient(); 
-
-      
-      
-
   if(playingMusic==true){
       // wait till mp3 wants more data
       if (musicPlayer.readyForData()) {
@@ -154,16 +157,36 @@ void StopMusic(){
        playingMusic=false;
 }
 void VolumePlus(){
-  server.send(200, "text/plain", "Music ++ volume="+ lastvol);
+  
+  if(lastvol-5>=0)
+  {
   lastvol-=5;
-  Serial.println("new volume = "+lastvol);
+  }
+  else
+  {
+   lastvol=0;
+  }
+  server.send(200, "text/plain",  "volume="+String(lastvol));
+  Serial.println(lastvol);
   musicPlayer.setVolume(lastvol, lastvol);
+  
 }
 void VolumeMin(){
-  server.send(200, "text/plain", "Music -- volume="+ lastvol);
+  
+  if(lastvol+5<=150){
   lastvol+=5;
-  Serial.println("new volume = "+lastvol);
+  }
+  else
+  {
+    lastvol=150;
+  }
+  server.send(200, "text/plain","volume="+String(lastvol));
+  Serial.println(lastvol);
   musicPlayer.setVolume(lastvol, lastvol);
+}
+
+void handleNotFound(){
+  server.send(404, "text/plain", "404: Not found"); // Send HTTP status 404 (Not Found) when there's no handler for the URI in the request
 }
 
 
