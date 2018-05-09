@@ -2,6 +2,7 @@
     #include <SPI.h>
     #include <Adafruit_VS1053.h>
     #include <ESP8266WiFi.h>
+    #include <ESP8266WebServer.h> 
      
     char* ssid     = "{unknown}";
     const char* password = "jkw829kw91&";
@@ -28,7 +29,8 @@
      
     // Use WiFiClient class to create HTTP/TCP connection
     WiFiClient client;
-      
+    ESP8266WebServer server;
+    
     void setup() {
       Serial.begin(115200);
     
@@ -81,6 +83,24 @@
       client.print(String("GET ") + path + " HTTP/1.1\r\n" +
                    "Host: " + host + "\r\n" + 
                    "Connection: close\r\n\r\n");
+
+
+////testing
+          WiFi.begin(ssid,password);
+          while(WiFi.status() != WL_CONNECTED){
+          delay(500);
+          Serial.println(".");
+          }
+          server.begin();
+          Serial.print("Use this server to connect with hhtp://");
+          Serial.print(WiFi.localIP());
+          Serial.println("/");
+
+          server.on("/", OpenHomePage);
+          server.on("/start", StartMusic);
+          server.on("/stop", StopMusic);
+          server.on("/volumeplus", VolumePlus);
+          server.on("/volumemin", VolumeMin);
      
     }
      
@@ -89,40 +109,12 @@
     bool playingMusic=true;
 
      
-    void loop() {
-
+    void loop(void) {
+ server.handleClient(); 
 
       
       
-if(Serial.available()>0){
-    String Volume=Serial.readString();
-    
-    if(Volume=="+")
-    {
-      lastvol+=5;
-      Serial.println("new volume = "+lastvol);
-     musicPlayer.setVolume(lastvol, lastvol);
-     
-    }
-    else if(Volume=="-")
-    {
-      lastvol-=5;
-     Serial.println("new volume = "+lastvol);
-     musicPlayer.setVolume(lastvol, lastvol);
-    }
-    else if(Volume=="stop")
-    {
-      Serial.println("music stopped");
-       digitalWrite(VS1053_DCS, LOW); 
-       playingMusic=false;
-    }
-     else if(Volume=="start")
-    {
-      Serial.println("music started");
-       digitalWrite(VS1053_DCS, HIGH); 
-       playingMusic=true;
-    }
-}
+
   if(playingMusic==true){
       // wait till mp3 wants more data
       if (musicPlayer.readyForData()) {
@@ -141,4 +133,38 @@ if(Serial.available()>0){
       }
   }
     }
+
+
+    
+void OpenHomePage(){
+  server.send(200, "text/plain", "hello are yah toking to me? tok tok");
+}
+
+void StartMusic(){
+  server.send(200, "text/plain", "music started");
+    Serial.println("music started");
+       digitalWrite(VS1053_DCS, HIGH); 
+       playingMusic=true;
+  
+}
+void StopMusic(){
+  server.send(200, "text/plain", "music stopped");
+  Serial.println("music stopped");
+       digitalWrite(VS1053_DCS, LOW); 
+       playingMusic=false;
+}
+void VolumePlus(){
+  server.send(200, "text/plain", "Music ++ volume="+ lastvol);
+  lastvol-=5;
+  Serial.println("new volume = "+lastvol);
+  musicPlayer.setVolume(lastvol, lastvol);
+}
+void VolumeMin(){
+  server.send(200, "text/plain", "Music -- volume="+ lastvol);
+  lastvol+=5;
+  Serial.println("new volume = "+lastvol);
+  musicPlayer.setVolume(lastvol, lastvol);
+}
+
+
     
