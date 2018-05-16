@@ -1,0 +1,118 @@
+[
+{
+"name":"radio 1",
+"host":"icecast.omroep.nl",
+"path":"radio1-bb-aac",
+"country":"holland"
+},
+{
+"name":"radio 2",
+"host":"icecast.omroep.nl",
+"path":"radio2-bb-aac",
+"country":"holland"
+},
+{
+"name":"3FM",
+"host":"icecast.omroep.nl",
+"path":"3fm-bb-aac",
+"country":"holland"
+},
+{
+"name":"3Fm Alternative",
+"host":"icecast.omroep.nl",
+"path":"3fm-alternative-aac",
+"country":"holland"
+},
+{
+"name":"Radio 4",
+"host":"icecast.omroep.nl",
+"path":"radio4-bb-aac",
+"country":"holland"
+},
+{
+"name":"Funx Arab Radio",
+"host":"icecast.omroep.nl",
+"path":"funx-arab-sb-aac",
+"country":"holland"
+},
+{
+"name":"Funx HipHop",
+"host":"icecast.omroep.nl",
+"path":"funx-hiphop-sb-aac",
+"country":"holland"
+},
+{
+"name":"Funx Reggae",
+"host":"icecast.omroep.nl",
+"path":"funx-reggae-sb-aac",
+"country":"holland"
+},
+{
+"name":"Radio 10",
+"host":"playerservices.streamtheworld.com",
+"path":"api/livestream-redirect/RADIO10.mp3",
+"country":"holland"
+},
+{
+"name":"Radio Veronica Rock",
+"host":"playerservices.streamtheworld.com",
+"path":"api/livestream-redirect/SRGSTR11.mp3",
+"country":"holland"
+},
+{
+"name":"Wdr4",
+"host":"wdr-wdr4-live.icecast.wdr.de",
+"path":"wdr/wdr4/live/mp3/128/stream.mp3",
+"country":"German"
+},
+{
+"name":"Dein 80er Radio",
+"host":"rnrw.cast.addradio.de",
+"path":"rnrw-0182/dein80er/high/stream.mp3",
+"country":"German"
+},
+{
+"name":"Dein Schlager Radio",
+"host":"rnrw.cast.addradio.de",
+"path":"rnrw-0182/deinschlager/high/stream.mp3",
+"country":"German"
+},
+{
+"name":"Dein 90er Radio",
+"host":"rnrw.cast.addradio.de",
+"path":"rnrw-0182/dein90er/high/stream.mp3",
+"country":"German"
+},
+{
+"name":"Alcudia Ràdio",
+"host":"streaming.enantena.com:8000",
+"path":"alcudiaradio56.mp3",
+"country":"spanish"
+},
+{
+"name":"Alpicat Ràdio",
+"host":"streaming.enantena.com:8001",
+"path":"alpicatradio128.mp3",
+"country":"spanish"
+},
+{
+"name":"Kiss FM",
+"host":"kissfm.kissfmradio.cires21.com",
+"path":"kissfm.mp3",
+"country":"spanish"
+},
+{
+"name":"Celtic Music Radio",
+"host":"stream.celticmusicradio.net:8000",
+"path":"celticmusic.mp3",
+"country":"celtic"
+},
+{
+"name":"Clyde 1",
+"host":"ive-bauer-al.sharp-stream.com",
+"path":"clyde1.mp3",
+"country":"celtic"
+}
+
+]
+
