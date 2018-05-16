@@ -1,8 +1,15 @@
 package com.company;
+import java.io.*;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import org.json.
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.json.simple.JSONArray;
+
+
+
+
 
 
 public class Main {
@@ -10,13 +17,34 @@ public class Main {
 
     static HttpControls httpControls= new HttpControls();
 
-    public static void main(String[] args) throws Exception{
-        System.out.println( StartMusic("http://172.20.10.4"));
+    public static void main(String[] args) {
+        readJsonRadioStations();
     }
 
-    public void readJsonRadioStations() throws FileNotFoundException {
-         parser = new JSONParser();
-        Object obj = parser.parse(new FileReader("RadioStationJson.json"));
+    public static void readJsonRadioStations(){
+        JSONParser parser= new JSONParser();
+
+        try{
+
+            FileReader reader= new FileReader("src\\RadioStations.json");
+            Object obj = parser.parse(reader);
+            JSONObject jsonObject = (JSONObject) obj;
+            JSONArray radioStations = (JSONArray) jsonObject.get("RadioStations");
+            for (Object radioStation : radioStations) {
+                JSONObject radio=(JSONObject)radioStation;
+                System.out.println(radio.get("name")+"---"+radio.get("country"));
+            }
+
+
+
+        }
+         catch (ParseException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     public  static String StartMusic(String nodeIpAdress)throws Exception{
