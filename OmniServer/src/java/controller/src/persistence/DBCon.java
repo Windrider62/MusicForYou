@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DBCon {
 
-    final static String url = "jdbc:mysql://localhost/postgres";
-    final static String user = "admin";
-    final static String password = "password";
+    final static String url = "jdbc:mysql://localhost/mysql";
+    final static String user = "user1";
+    final static String password = "passw!";
     private static DBConnectionString prefConnection;
 
     private Connection DBConnect;
