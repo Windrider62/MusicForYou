@@ -5,7 +5,9 @@ import java.net.URL;
 
 
 public class HttpControls {
-    public static  String HttpGetMethod(String requestPath) throws Exception{
+
+
+    public static  String HttpGetMethod(String requestPath) throws Exception{// http get method to arduino
 
         URL url = new URL(requestPath);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
