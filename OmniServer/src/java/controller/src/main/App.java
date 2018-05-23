@@ -19,6 +19,7 @@ public class App {
             port = 20002;
         }
         App.InitProtocolServer(ip, port);
+
     }
 
     private static void InitProtocolServer(String address, int port) {

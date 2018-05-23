@@ -1,35 +1,35 @@
-package RadioStations;
+package omniserver.demo.LogicLayer;
 
-import Models.radioStationModel;
-import org.json.simple.*;
-import org.json.simple.parser.*;
-
+import omniserver.demo.Models.RadioStationModel;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import java.io.FileReader;
 import java.io.IOException;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class webRadioStation {
-    
-    public List<Models.radioStationModel> radioList= new ArrayList<>();
+public class WebRadio_Logic {
+    private  List<RadioStationModel> radioList= new ArrayList<>();
 
-    public webRadioStation(){
+    public WebRadio_Logic(){
         readJsonRadioStations();
     }
 
-    public  List<radioStationModel> readJsonRadioStations(){//read json file with radio stations to List<objects>
+    private  void readJsonRadioStations(){//read json file with radio stations to List<objects>
         JSONParser parser= new JSONParser();
-            try{
+        try{
 
-            FileReader reader= new FileReader("src\\ObjectFiles\\RadioStations.json");
+
+            FileReader reader= new FileReader("src\\main\\java\\omniserver\\demo\\ObjectFiles\\RadioStations.json");
             Object obj= parser.parse(reader);
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray radioStations = (JSONArray) jsonObject.get("RadioStations");
 
             for (Object radioStation : radioStations) {
                 JSONObject radio=(JSONObject)radioStation;
-                radioStationModel radioModel= new radioStationModel();
+                RadioStationModel radioModel= new RadioStationModel();
                 radioModel.name=radio.get("name").toString();
                 radioModel.host=radio.get("host").toString();
                 radioModel.path=radio.get("path").toString();
@@ -39,26 +39,26 @@ public class webRadioStation {
 
 
         }
-         catch (IOException e) {
+        catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            e.printStackTrace();
+        }
 
-        return radioList;
+
     }
 
     public List<String> getAllRadioStationNames(){//Get all radio station names
         List<String> ListRadioNames= new ArrayList<>();
-        for (Models.radioStationModel radio: radioList){
+        for (RadioStationModel radio: radioList){
             boolean add = ListRadioNames.add(radio.name);
         }
         return ListRadioNames;
     }
 
-    public radioStationModel GetRadioStationByName(String RadioStationName){//get the radio station object by name
-        radioStationModel webRadio= new radioStationModel();
-        for (Models.radioStationModel radio: radioList){
+    public RadioStationModel GetRadioStationByName(String RadioStationName){//get the radio station object by name
+        RadioStationModel webRadio= new RadioStationModel();
+        for ( RadioStationModel radio: radioList){
             if(radio.name.equals(RadioStationName)){
                 webRadio= radio;
             }
