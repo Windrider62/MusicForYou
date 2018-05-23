@@ -51,11 +51,11 @@ public class NodeMusicOperationController {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
     }
-    @GetMapping("/node/changeradiostation/{host}")
-    public String ChangeRadioStation(@PathVariable("host") String host,@PathVariable("path") String path) throws Exception {
+    @GetMapping("/node/changeradiostation/{stationname}")
+    public String ChangeRadioStation(@PathVariable("stationname") String stationName) throws Exception {
 
         try {
-            return _nodeHttp.ChangeRadioStation(NodeIp, host, path);
+            return _nodeHttp.ChangeRadioStation(NodeIp, stationName);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }

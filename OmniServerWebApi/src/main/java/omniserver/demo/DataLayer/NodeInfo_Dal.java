@@ -1,5 +1,6 @@
 package omniserver.demo.DataLayer;
 
+
 import omniserver.demo.Models.Node;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -14,19 +15,19 @@ import java.util.List;
 public class NodeInfo_Dal {
 
     public List<Node> NodeList = new ArrayList<Node>();
-
+    private  String path="src\\main\\java\\omniserver\\demo\\ObjectFiles\\nodeConfig.json";
 
     public NodeInfo_Dal(){
         ReadNodeInfoJson();
-
     }
+
 
     private void ReadNodeInfoJson() {//read json file with node information to List<objects>
         JSONParser parser = new JSONParser();
         try {
 
 
-            FileReader reader = new FileReader("src\\main\\java\\omniserver\\demo\\ObjectFiles\\nodeConfig.json");
+            FileReader reader = new FileReader(path);
             Object obj = parser.parse(reader);
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray nodes = (JSONArray) jsonObject.get("nodes");
@@ -52,4 +53,39 @@ public class NodeInfo_Dal {
     public List<Node> GetAllNodes(){// returns all the node information
         return NodeList;
     }
+
+    public Boolean addNewNode() {// returns all the node information
+        /*try {
+            Node node = new Node();
+            org.json.JSONObject obj = new org.json.JSONObject(node);
+            FileWriter fileWriter = new FileWriter(path, true);
+        return true;
+        }
+        catch (Exception e){
+            return false;
+        }
+        */
+        return null;
+    }
+    /*public Boolean EditNodeName() {// returns all the node information
+        JSONParser parser = new JSONParser();
+        try {
+
+
+            FileReader reader = new FileReader(path);
+            Object obj = parser.parse(reader);
+            JSONObject jsonObject = (JSONObject) obj;
+            JSONArray nodes = (JSONArray) jsonObject.get("nodes");
+
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    */
 }

@@ -13,5 +13,8 @@ public class NodeInfo_Logic {
     public List<Node> GetAllNodes(){//get all the nodes form the json file
     return _NodeDal.NodeList;
     }
+    public boolean AddNewNode(Node node){
+        return _NodeDal.addNewNode();
+    }
 
 }
