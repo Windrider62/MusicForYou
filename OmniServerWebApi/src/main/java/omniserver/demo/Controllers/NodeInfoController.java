@@ -3,6 +3,7 @@ package omniserver.demo.Controllers;
 import omniserver.demo.LogicLayer.NodeInfo_Logic;
 import omniserver.demo.Models.Node;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +19,7 @@ public class NodeInfoController {
         return _nodeLogic.GetAllNodes();
 
     }
-    @GetMapping("nodeInfo/AddNode")
+    @PostMapping("nodeInfo/AddNode")
     public boolean AddNewNode(@RequestBody Node node){
         return _nodeLogic.AddNewNode(node);
 
