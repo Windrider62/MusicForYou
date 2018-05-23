@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OmniServer.iml" filepath="$PROJECT_DIR$/OmniServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/java/controller/controller.iml" filepath="$PROJECT_DIR$/src/java/controller/controller.iml" />
-      <module fileurl="file://C:\Users\Rick\Documents\GitHub\Backend\src\controller\controller.iml" filepath="C:\Users\Rick\Documents\GitHub\Backend\src\controller\controller.iml" />
-      <module fileurl="file://C:\Users\Rick\Documents\GitHub\Backend\src\src.iml" filepath="C:\Users\Rick\Documents\GitHub\Backend\src\src.iml" />
-      <module fileurl="file://C:\Users\Rick\Documents\GitHub\Backend\src\controller\java\webservice\webservice.iml" filepath="C:\Users\Rick\Documents\GitHub\Backend\src\controller\java\webservice\webservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../Rick/Documents/GitHub/Backend/src/controller/controller.iml" filepath="$PROJECT_DIR$/../../../../../Rick/Documents/GitHub/Backend/src/controller/controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../Rick/Documents/GitHub/Backend/src/src.iml" filepath="$PROJECT_DIR$/../../../../../Rick/Documents/GitHub/Backend/src/src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../Rick/Documents/GitHub/Backend/src/controller/java/webservice/webservice.iml" filepath="$PROJECT_DIR$/../../../../../Rick/Documents/GitHub/Backend/src/controller/java/webservice/webservice.iml" />
     </modules>
   </component>
 </project>
