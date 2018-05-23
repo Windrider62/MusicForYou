@@ -41,9 +41,14 @@
 			<artifactId>json-simple</artifactId>
 			<version>1.1.1</version>
 		</dependency>
+        <dependency>
+            <groupId>OmniServer</groupId>
+            <artifactId>demo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
 
-	</dependencies>
+    </dependencies>
 
 	<build>
 		<plugins>
