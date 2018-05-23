@@ -2,7 +2,8 @@ package omniserver.demo.LogicLayer;
 
 import omniserver.demo.DataLayer.Http_Dal;
 
-public class NodeHttpRequests {
+
+public class NodeHttpRequests_Logic {
 
      private static Http_Dal NodeHttp= new Http_Dal();
 

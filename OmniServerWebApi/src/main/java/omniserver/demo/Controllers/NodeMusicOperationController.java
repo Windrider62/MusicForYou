@@ -1,6 +1,6 @@
 package omniserver.demo.Controllers;
 
-import omniserver.demo.LogicLayer.NodeHttpRequests;
+import omniserver.demo.LogicLayer.NodeHttpRequests_Logic;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,23 +9,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class NodeMusicOperationController {
-    private NodeHttpRequests _nodeHttp = new NodeHttpRequests();
 
-    @GetMapping("/node/start")
-    public String startMusic() throws Exception {
+    private NodeHttpRequests_Logic _nodeHttp = new NodeHttpRequests_Logic();
+    private String NodeIp= "http://172.20.10.4";
+
+
+    @GetMapping("/node/start")//starts the music on the node
+    public String startMusic()  {
 
         try {
-            return _nodeHttp.StartMusic("");
+            return _nodeHttp.StartMusic(NodeIp);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
     }
 
-    @GetMapping("/node/stop")
-    public String StopMusic() throws Exception {
+    @GetMapping("/node/stop")// stop s the music on the node
+    public String StopMusic()  {
 
         try {
-            return _nodeHttp.StopMusic("");
+            return _nodeHttp.StopMusic(NodeIp);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
@@ -34,7 +37,7 @@ public class NodeMusicOperationController {
     public String MusicVolumePlus(@PathVariable("volume") int volume) throws Exception {
 
         try {
-            return _nodeHttp.MusicVolumePlus("", volume);
+            return _nodeHttp.MusicVolumePlus(NodeIp, volume);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
@@ -43,7 +46,7 @@ public class NodeMusicOperationController {
     public String MusicVolumeMin(@PathVariable("volume") int volume) throws Exception {
 
         try {
-            return _nodeHttp.MusicVolumeMin("", volume);
+            return _nodeHttp.MusicVolumeMin(NodeIp, volume);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
@@ -52,7 +55,7 @@ public class NodeMusicOperationController {
     public String ChangeRadioStation(@PathVariable("host") String host,@PathVariable("path") String path) throws Exception {
 
         try {
-            return _nodeHttp.ChangeRadioStation("", host, path);
+            return _nodeHttp.ChangeRadioStation(NodeIp, host, path);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }

@@ -13,12 +13,12 @@ public class RadioStationController {
 
     private WebRadio_Logic _logic = new WebRadio_Logic();
 
-    @GetMapping("/station-names")
+    @GetMapping("/station-names")//returns all radio station names
     public List<String> GetRadioStationNames(){
         return _logic.getAllRadioStationNames();
     }
 
-    @GetMapping("/station-by-name/{name}")
+    @GetMapping("/station-by-name/{name}")//returns 1 radio station by name
     public RadioStationModel GetRadioStationByName (@PathVariable("name") String RadioName){
         return _logic.GetRadioStationByName("radio 1");
     }
