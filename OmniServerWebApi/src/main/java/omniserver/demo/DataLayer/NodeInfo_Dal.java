@@ -2,6 +2,7 @@ package omniserver.demo.DataLayer;
 
 
 import omniserver.demo.Models.Node;
+import omniserver.demo.PathConverter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -18,7 +19,8 @@ public class NodeInfo_Dal {
     private  String path="src\\main\\java\\omniserver\\demo\\ObjectFiles\\nodeConfig.json";
 
     public NodeInfo_Dal(){
-        ReadNodeInfoJson();
+      ReadNodeInfoJson();
+      path= PathConverter.StringConverter(path);
     }
 
 

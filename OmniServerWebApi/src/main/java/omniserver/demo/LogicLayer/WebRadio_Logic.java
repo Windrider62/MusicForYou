@@ -1,6 +1,7 @@
 package omniserver.demo.LogicLayer;
 
 import omniserver.demo.Models.RadioStationModel;
+import omniserver.demo.PathConverter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -12,9 +13,12 @@ import java.util.List;
 
 public class WebRadio_Logic {
     private  List<RadioStationModel> radioList= new ArrayList<>();
+    private String path="src\\main\\java\\omniserver\\demo\\ObjectFiles\\RadioStations.json";
 
     public WebRadio_Logic(){
         readJsonRadioStations();
+        path= PathConverter.StringConverter(path);
+
     }
 
     private  void readJsonRadioStations(){//read json file with radio stations to List<objects>
@@ -22,7 +26,7 @@ public class WebRadio_Logic {
         try{
 
 
-            FileReader reader= new FileReader("src\\main\\java\\omniserver\\demo\\ObjectFiles\\RadioStations.json");
+            FileReader reader= new FileReader(path);
             Object obj= parser.parse(reader);
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray radioStations = (JSONArray) jsonObject.get("RadioStations");
