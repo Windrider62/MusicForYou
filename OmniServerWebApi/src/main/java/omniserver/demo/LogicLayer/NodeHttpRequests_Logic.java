@@ -18,11 +18,25 @@ public class NodeHttpRequests_Logic {
         return  NodeHttp.HttpGetMethod(url);
     }
     public  String MusicVolumePlus(String nodeIpAdress, int volume)throws Exception{// volume + music. send arduino ip adress and volume as int(negative works as well)
-        String url=nodeIpAdress+"/volumeplus?vol="+volume;
+        int newVolume=0;
+         if(150-volume<=0){
+              newvolume=0;
+         }
+         else{
+              newVolume=150-volume;
+         }
+         String url=nodeIpAdress+"/volumeplus?vol="+newVolume;
         return  NodeHttp.HttpGetMethod(url);
     }
     public  String MusicVolumeMin(String nodeIpAdress, int volume)throws Exception{// volume - music. send arduino ip adress and volume as int(negative works as well)
-        String url=nodeIpAdress+"/volumemin?vol="+volume;
+        int newVolume=0;
+         if(150-volume<=0){
+              newvolume=0;
+         }
+         else{
+              newVolume=150-volume;
+         }
+         String url=nodeIpAdress+"/volumemin?vol="+newVolume;
         return  NodeHttp.HttpGetMethod(url);
     }
     public String ChangeRadioStation(String nodeIpAdress, String stationName)throws Exception{//change the radio station path. send ip, web url host(no http:// or www.) and the path
