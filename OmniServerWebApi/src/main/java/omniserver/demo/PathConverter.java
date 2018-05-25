@@ -13,7 +13,7 @@ public class PathConverter {
              return oldPath;
         }
         else {
-            return oldPath.replace("\\","//");
+            return oldPath.replace("\\","/");
         }
     }
 }
