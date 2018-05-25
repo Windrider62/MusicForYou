@@ -1,2 +1,3 @@
 # MusicForYou
-music for you is an online music system that can control multible music boxes over a wifi channel.
+music for you is an arduino esp8266 bases home sound system, controlled over wifi.
+
