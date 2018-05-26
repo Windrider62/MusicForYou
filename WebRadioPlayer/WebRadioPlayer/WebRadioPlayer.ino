@@ -62,8 +62,7 @@
        server.on("/", OpenHomePage);
        server.on("/start", StartMusic);
        server.on("/stop", StopMusic);
-       server.on("/volumeplus", VolumePlus);
-       server.on("/volumemin", VolumeMin);
+       server.on("/changevolume", ChangeVolume);
        server.on("/changepath", ChangePath);
        server.onNotFound(handleNotFound);   
      
@@ -137,7 +136,7 @@ void StopMusic(){
   digitalWrite(VS1053_DCS, LOW); 
   playingMusic=false;
 }
-void VolumePlus(){
+void ChangeVolume(){
   int newvol=0;
   if(server.arg("vol")=="")
   {
@@ -146,41 +145,15 @@ void VolumePlus(){
   else{
     newvol=server.arg("vol").toInt();
     server.send(200, "text/plain", server.arg("vol"));
+    lastvol=newvol;
   }
   
-  if(lastvol-newvol>=0)
-  {
-  lastvol-=newvol;
-  }
-  else{
-    lastvol=0;
-  }
+  
   server.send(200, "text/plain",  "volume="+String(lastvol));
   musicPlayer.setVolume(lastvol, lastvol);
   
 }
-void VolumeMin(){
 
-  int newvol=0;
-  if(server.arg("vol")=="")
-  {
-    server.send(400, "text/plain", "error: 400 no parameter was send");
-  }
-  else{
-    newvol=server.arg("vol").toInt();
-    server.send(200, "text/plain", server.arg("vol"));
-  }
-  
-  if(lastvol+newvol<=150){
-  lastvol+=newvol;
-  }
-  else
-  {
-    lastvol=150;
-  }
-  server.send(200, "text/plain","volume="+String(lastvol));
-  musicPlayer.setVolume(lastvol, lastvol);
-}
 void handleNotFound(){
   server.send(404, "text/plain", "404: Not found"); // Send HTTP status 404 (Not Found) when there's no handler for the URI in the request
 }

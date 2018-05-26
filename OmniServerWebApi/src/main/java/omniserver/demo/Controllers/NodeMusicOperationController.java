@@ -3,60 +3,52 @@ package omniserver.demo.Controllers;
 import omniserver.demo.LogicLayer.NodeHttpRequests_Logic;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class NodeMusicOperationController {
 
     private NodeHttpRequests_Logic _nodeHttp = new NodeHttpRequests_Logic();
-    private String NodeIp= "http://172.20.10.4";
 
 
-    @GetMapping("/node/start")//starts the music on the node
-    public String startMusic()  {
+
+    @PostMapping("/node/start")//starts the music on the node
+    public String startMusic(@RequestBody List<String> nodeIps)  {
 
         try {
 
-            return _nodeHttp.StartMusic(NodeIp);
+            return _nodeHttp.StartMusic(nodeIps);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
     }
 
-    @GetMapping("/node/stop")// stop the music on the node
-    public String StopMusic()  {
+    @PostMapping("/node/stop")// stop the music on the node
+    public String StopMusic(@RequestBody List<String> nodeIps)  {
 
         try {
-            return _nodeHttp.StopMusic(NodeIp);
+            return _nodeHttp.StopMusic(nodeIps);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
     }
-    @GetMapping("/node/volumeplus/{volume}")
-    public String MusicVolumePlus(@PathVariable("volume") int volume) throws Exception {
+    @PostMapping("/node/changevolume/{volume}")
+    public String MusicVolume(@RequestBody List<String> nodeIps, @PathVariable("volume") int volume) throws Exception {
 
         try {
-            return _nodeHttp.MusicVolumePlus(NodeIp, volume);
+            return _nodeHttp.MusicVolume(nodeIps, volume);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
     }
-    @GetMapping("/node/volumemin/{volume}")
-    public String MusicVolumeMin(@PathVariable("volume") int volume) throws Exception {
+
+    @PostMapping("/node/changeradiostation/{stationname}")
+    public String ChangeRadioStation(@RequestBody List<String> nodeIps,@PathVariable("stationname") String stationName) throws Exception {
 
         try {
-            return _nodeHttp.MusicVolumeMin(NodeIp, volume);
-        } catch (Exception e) {
-            return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
-        }
-    }
-    @GetMapping("/node/changeradiostation/{stationname}")
-    public String ChangeRadioStation(@PathVariable("stationname") String stationName) throws Exception {
-
-        try {
-            return _nodeHttp.ChangeRadioStation(NodeIp, stationName);
+            return _nodeHttp.ChangeRadioStation(nodeIps, stationName);
         } catch (Exception e) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
         }
