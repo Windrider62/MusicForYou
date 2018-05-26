@@ -1,9 +1,1 @@
-{
-  "nodes":[
-    {
-      "name":"woonkamer",
-      "ip":"http://172.20.10.4"
-    }
-  ]
-
-}
+{"nodes":[{"name":"testkamer","ip":"http://172.20.10.55"},{"name":"testkamer","ip":"http://172.20.10.55"},{"name":"testkamer","ip":"http://172.20.10.55"}]}

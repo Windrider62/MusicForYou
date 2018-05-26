@@ -1,7 +1,7 @@
 package omniserver.demo.LogicLayer;
 
 import omniserver.demo.Models.RadioStationModel;
-import omniserver.demo.PathConverter;
+import omniserver.demo.fileEditor.PathConverter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

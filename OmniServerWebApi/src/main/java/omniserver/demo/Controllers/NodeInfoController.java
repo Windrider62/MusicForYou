@@ -2,17 +2,15 @@ package omniserver.demo.Controllers;
 
 import omniserver.demo.LogicLayer.NodeInfo_Logic;
 import omniserver.demo.Models.Node;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
 public class NodeInfoController {
 
-    NodeInfo_Logic _nodeLogic= new NodeInfo_Logic();
+    private NodeInfo_Logic _nodeLogic= new NodeInfo_Logic();
 
     @GetMapping("nodeInfo/GetNodes")
     public List<Node> getAllNodes(){
@@ -20,8 +18,14 @@ public class NodeInfoController {
 
     }
     @PostMapping("nodeInfo/AddNode")
-    public boolean AddNewNode(@RequestBody Node node){
+    public boolean AddNewNode(@RequestBody Node node) throws IOException {
         return _nodeLogic.AddNewNode(node);
+
+    }
+    @PostMapping("nodeInfo/renamenode{oldname}/{newname}")
+    public String RenameNode(@PathVariable("oldname") String oldName, @PathVariable("newname") String newName) throws IOException {
+        //Node name if no error return new name else return old name
+        return _nodeLogic.RenameNode(oldName, newName);
 
     }
 

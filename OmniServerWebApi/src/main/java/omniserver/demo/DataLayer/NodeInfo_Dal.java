@@ -1,23 +1,23 @@
 package omniserver.demo.DataLayer;
 
 
+import com.google.gson.Gson;
 import omniserver.demo.Models.Node;
-import omniserver.demo.PathConverter;
+import omniserver.demo.Models.NodeList;
+import omniserver.demo.fileEditor.PathConverter;
+import omniserver.demo.fileEditor.WriteFile;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class NodeInfo_Dal {
 
-    public List<Node> NodeList = new ArrayList<Node>();
+    public NodeList nodeList = new NodeList();
     private  String path="src/main/java/omniserver/demo/ObjectFiles/nodeConfig.json";
 
     public NodeInfo_Dal(){
@@ -41,7 +41,7 @@ public class NodeInfo_Dal {
                 Node node = new Node();
                 node.name = radio.get("name").toString();
                 node.ip = radio.get("ip").toString();
-                NodeList.add(node);
+                nodeList.nodes.add(node);
             }
 
 
@@ -55,38 +55,33 @@ public class NodeInfo_Dal {
     }
 
     public List<Node> GetAllNodes(){// returns all the node information
-        return NodeList;
+        return nodeList.nodes;
     }
 
     public Boolean addNewNode(Node node) {// returns all the node information
-        try {
-            JSONObject obj = new JSONObject((Map) node);
-            FileWriter fileWriter = new FileWriter(path, true);
-        return true;
-        }
-        catch (Exception e) {
-            return false;
-        }
+      nodeList.nodes.add(node);
+      String json= new Gson().toJson(nodeList);
+      WriteFile fileWriter= new WriteFile();
+      return fileWriter.WriteFileOperator(path, json);
+
     }
-    /*public Boolean EditNodeName() {// returns all the node information
-        JSONParser parser = new JSONParser();
-        try {
-
-
-            FileReader reader = new FileReader(path);
-            Object obj = parser.parse(reader);
-            JSONObject jsonObject = (JSONObject) obj;
-            JSONArray nodes = (JSONArray) jsonObject.get("nodes");
-
-
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
+    public String RenameNode(String oldName, String newNodeName) {// returns all the node information
+        for(Node node: nodeList.nodes){
+            if(node.name.equals(oldName)){
+                node.name=newNodeName;
+            }
         }
-        return null;
+
+        String json= new Gson().toJson(nodeList.nodes);
+        WriteFile fileWriter= new WriteFile();
+        if(fileWriter.WriteFileOperator(path, json)){
+            return newNodeName;
+        }
+        else
+        {
+            return oldName;
+        }
+
     }
-    */
+
 }
