@@ -20,5 +20,8 @@ public class NodeInfo_Logic {
     public String RenameNode(String oldName, String newName) throws IOException {
         return _NodeDal.RenameNode(oldName, newName);
     }
+    public Boolean RemoveNode(String nodeName) throws IOException {
+        return _NodeDal.RemoveNode(nodeName);
+    }
 
 }

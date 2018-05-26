@@ -2,6 +2,7 @@ package omniserver.demo.DataLayer;
 
 
 import com.google.gson.Gson;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import omniserver.demo.Models.Node;
 import omniserver.demo.Models.NodeList;
 import omniserver.demo.fileEditor.PathConverter;
@@ -27,6 +28,7 @@ public class NodeInfo_Dal {
 
 
     private void ReadNodeInfoJson() {//read json file with node information to List<objects>
+        nodeList.nodes.clear();
         JSONParser parser = new JSONParser();
         try {
 
@@ -53,12 +55,8 @@ public class NodeInfo_Dal {
 
 
     }
-
-    public List<Node> GetAllNodes(){// returns all the node information
-        return nodeList.nodes;
-    }
-
     public Boolean addNewNode(Node node) {// returns all the node information
+      ReadNodeInfoJson();
       nodeList.nodes.add(node);
       String json= new Gson().toJson(nodeList);
       WriteFile fileWriter= new WriteFile();
@@ -66,13 +64,14 @@ public class NodeInfo_Dal {
 
     }
     public String RenameNode(String oldName, String newNodeName) {// returns all the node information
+        ReadNodeInfoJson();
         for(Node node: nodeList.nodes){
             if(node.name.equals(oldName)){
                 node.name=newNodeName;
             }
         }
 
-        String json= new Gson().toJson(nodeList.nodes);
+        String json= new Gson().toJson(nodeList);
         WriteFile fileWriter= new WriteFile();
         if(fileWriter.WriteFileOperator(path, json)){
             return newNodeName;
@@ -81,6 +80,20 @@ public class NodeInfo_Dal {
         {
             return oldName;
         }
+
+    }
+    public Boolean RemoveNode(String nodeName) {// returns all the node information
+        ReadNodeInfoJson();
+        for(Node node: nodeList.nodes){
+            if(node.name.equals(nodeName)){
+                nodeList.nodes.remove(node);
+            }
+        }
+
+        String json= new Gson().toJson(nodeList);
+        WriteFile fileWriter= new WriteFile();
+        return fileWriter.WriteFileOperator(path, json);
+
 
     }
 
