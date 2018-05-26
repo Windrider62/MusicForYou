@@ -18,7 +18,7 @@ import java.util.Map;
 public class NodeInfo_Dal {
 
     public List<Node> NodeList = new ArrayList<Node>();
-    private  String path="src\\main\\java\\omniserver\\demo\\ObjectFiles\\nodeConfig.json";
+    private  String path="src/main/java/omniserver/demo/ObjectFiles/nodeConfig.json";
 
     public NodeInfo_Dal(){
       ReadNodeInfoJson();

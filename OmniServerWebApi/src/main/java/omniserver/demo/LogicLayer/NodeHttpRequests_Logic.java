@@ -20,7 +20,7 @@ public class NodeHttpRequests_Logic {
     public  String MusicVolumePlus(String nodeIpAdress, int volume)throws Exception{// volume + music. send arduino ip adress and volume as int(negative works as well)
         int newVolume=0;
          if(150-volume<=0){
-              newvolume=0;
+             newVolume=0;
          }
          else{
               newVolume=150-volume;
@@ -31,7 +31,7 @@ public class NodeHttpRequests_Logic {
     public  String MusicVolumeMin(String nodeIpAdress, int volume)throws Exception{// volume - music. send arduino ip adress and volume as int(negative works as well)
         int newVolume=0;
          if(150-volume<=0){
-              newvolume=0;
+             newVolume=0;
          }
          else{
               newVolume=150-volume;

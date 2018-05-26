@@ -13,7 +13,7 @@ import java.util.List;
 
 public class WebRadio_Logic {
     private  List<RadioStationModel> radioList= new ArrayList<>();
-    private String path="src\\main\\java\\omniserver\\demo\\ObjectFiles\\RadioStations.json";
+    private String path="src/main/java/omniserver/demo/ObjectFiles/RadioStations.json";
 
     public WebRadio_Logic(){
         readJsonRadioStations();

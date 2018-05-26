@@ -1,6 +1,7 @@
 package omniserver.demo;
 
 
+import java.io.File;
 
 public class PathConverter {
 
@@ -9,11 +10,13 @@ public class PathConverter {
 
     }
     public static String StringConverter(String oldPath){
+
+
         if(System.getProperty("os.name").contains("Windows")){
-             return oldPath;
+            return oldPath.replace("/", "\\");
         }
         else {
-            return oldPath.replace("\\","/");
+            return oldPath;
         }
     }
 }
