@@ -25,7 +25,7 @@ public class NodeMusicOperationController {
         }
     }
 
-    @GetMapping("/node/stop")// stop s the music on the node
+    @GetMapping("/node/stop")// stop the music on the node
     public String StopMusic()  {
 
         try {

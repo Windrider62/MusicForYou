@@ -9,9 +9,11 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class NodeInfo_Dal {
 
@@ -56,18 +58,15 @@ public class NodeInfo_Dal {
         return NodeList;
     }
 
-    public Boolean addNewNode() {// returns all the node information
-        /*try {
-            Node node = new Node();
-            org.json.JSONObject obj = new org.json.JSONObject(node);
+    public Boolean addNewNode(Node node) {// returns all the node information
+        try {
+            JSONObject obj = new JSONObject((Map) node);
             FileWriter fileWriter = new FileWriter(path, true);
         return true;
         }
-        catch (Exception e){
+        catch (Exception e) {
             return false;
         }
-        */
-        return null;
     }
     /*public Boolean EditNodeName() {// returns all the node information
         JSONParser parser = new JSONParser();

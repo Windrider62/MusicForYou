@@ -14,7 +14,7 @@ public class NodeInfo_Logic {
     return _NodeDal.NodeList;
     }
     public boolean AddNewNode(Node node){
-        return _NodeDal.addNewNode();
+        return _NodeDal.addNewNode(node);
     }
 
 }
