@@ -14,14 +14,14 @@ public class NodeHttpRequests_Logic {
     public String StartMusic(List<String> nodeIpAdress)throws Exception{// starts music, only the  arduino ipadress is used
         for(String ip:nodeIpAdress) {
             String url = ip + "/start";
-            NodeHttp.HttpGetMethod(url);
+             NodeHttp.HttpGetMethod(url);
         }
         return "";
     }
     public String StopMusic(List<String>  nodeIpAdress)throws Exception{// stops music, only the  arduino ipadress is used
         for(String ip:nodeIpAdress) {
         String url=ip+"/stop";
-          NodeHttp.HttpGetMethod(url);
+             NodeHttp.HttpGetMethod(url);
         }
         return "";
     }
@@ -35,7 +35,7 @@ public class NodeHttpRequests_Logic {
          }
         for(String ip:nodeIpAdress) {
             String url = ip + "/changevolume?vol=" + newVolume;
-            NodeHttp.HttpGetMethod(url);
+              NodeHttp.HttpGetMethod(url);
         }
         return "";
     }
@@ -45,7 +45,7 @@ public class NodeHttpRequests_Logic {
 
         for(String ip:nodeIpAdress) {
         String url=ip+String.format("/changepath?host=%s&path=%s", station.host,station.path);
-         NodeHttp.HttpGetMethod(url);
+          NodeHttp.HttpGetMethod(url);
         }
         return "";
     }

@@ -85,6 +85,30 @@ autenticate user login:
 	
 	
 	
+NODE HTTPREQUESTS
+start the music
+	type= get
+	path= ipadress+”/start”
+	parameter= null
+	return= String and response code
+
+stop the music
+	type= get
+	path= ipadress+”/stop”
+	parameter= null
+	return= String and response code
+
+change the volume
+	type= get
+	path= ipadress+”/changevolume?vol={int volume}
+	parameter= int volume
+	return= String and response code
+
+change the station
+	type= get
+	path= ipadress+”/changepath?hots={host url}&path={path url}
+	parameter= string host, string path
+	return= String and response code
 	
 	
 	
