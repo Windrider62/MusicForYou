@@ -20,7 +20,7 @@
     String path = "/3fm-bb-mp3";
     int httpPort = 80;
     int lastvol = 0;
-    bool playingMusic=true;
+    bool musicIsPlaying=true;
 
     //instantiate the servers
     WiFiClient client;
@@ -74,7 +74,7 @@ void loop(void) {
 // our little buffer of mp3 data
     uint8_t mp3buff[32];   // vs1053 likes 32 bytes at a time
      
-      if(playingMusic==true)
+      if(musicIsPlaying==true)
       {
         // wait till mp3 wants more data
         if (musicPlayer.readyForData()) 
@@ -127,14 +127,14 @@ void StartMusic(){
   server.send(200, "text/plain", "music started");
     Serial.println("music started");
        digitalWrite(VS1053_DCS, HIGH); 
-       playingMusic=true;
+       musicIsPlaying=true;
   
 }
 void StopMusic(){
   server.send(200, "text/plain", "music stopped");
   Serial.println("music stopped");
   digitalWrite(VS1053_DCS, LOW); 
-  playingMusic=false;
+  musicIsPlaying=false;
 }
 void ChangeVolume(){
   int newvol=0;

@@ -1,13 +1,10 @@
 /*************************************************** 
   This is a library for the Adafruit VS1053 Codec Breakout
-
   Designed specifically to work with the Adafruit VS1053 Codec Breakout 
   ----> https://www.adafruit.com/products/1381
-
   Adafruit invests time and resources providing this open source code, 
   please support Adafruit and open-source hardware by purchasing 
   products from Adafruit!
-
   Written by Limor Fried/Ladyada for Adafruit Industries.  
   BSD license, all text above must be included in any redistribution
  ****************************************************/
@@ -143,7 +140,7 @@ boolean Adafruit_VS1053_FilePlayer::playFullFile(const char *trackname) {
   return true;
 }
 
-void Adafruit_VS1053::stopPlaying(void) {
+void Adafruit_VS1053_FilePlayer::stopPlaying(void) {
   // cancel all playback
   sciWrite(VS1053_REG_MODE, VS1053_MODE_SM_LINE1 | VS1053_MODE_SM_SDINEW | VS1053_MODE_SM_CANCEL);
   
@@ -260,7 +257,7 @@ static PortMask clkpin, misopin, mosipin;
 
 Adafruit_VS1053::Adafruit_VS1053(int8_t mosi, int8_t miso, int8_t clk, 
 			   int8_t rst, int8_t cs, int8_t dcs, int8_t dreq) {
-  _mosi = D7;
+_mosi = D7;
   _miso = D6;
   _clk = D5;//SCK
   _reset = D3;
@@ -280,14 +277,14 @@ Adafruit_VS1053::Adafruit_VS1053(int8_t mosi, int8_t miso, int8_t clk,
 
 
 Adafruit_VS1053::Adafruit_VS1053(int8_t rst, int8_t cs, int8_t dcs, int8_t dreq) {
-  _mosi = D7;
-  _miso = D6;
+   _miso = D6;
   _clk = D5;//SCK
   useHardwareSPI = true;
   _reset = D3;
   _cs = D8;//XCS
   _dcs = D1;//XDCS
   _dreq = D2;
+
 }
 
 
