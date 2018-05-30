@@ -1,28 +1,37 @@
 package omniserver.demo.Controllers;
 
 import omniserver.demo.LogicLayer.NodeHttpRequests_Logic;
+import omniserver.demo.callabletask.CallableWorker;
+import omniserver.demo.callabletask.CallableWorkerPlay;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Future;
 
 @RestController
 public class NodeMusicOperationController {
 
+    @Autowired
+    ThreadPoolTaskExecutor threadPool;
+
     private NodeHttpRequests_Logic _nodeHttp = new NodeHttpRequests_Logic();
+    private int threadNumber =0;
+    List<Future<String>> futureList = new ArrayList<>();
+
 
 
 
     @PostMapping("/node/start")//starts the music on the node
-    public String startMusic(@RequestBody List<String> nodeIps)  {
-
-        try {
-
-            return _nodeHttp.StartMusic(nodeIps);
-        } catch (Exception e) {
-            return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
-        }
+    public void startMusic(@RequestBody List<String> nodeIps)  {
+    threadNumber++;
+    CallableWorkerPlay callableTask = new CallableWorkerPlay(String.valueOf(threadNumber),nodeIps);
+    Future<String> result = threadPool.submit(callableTask);
+    futureList.add(result);
     }
 
     @PostMapping("/node/stop")// stop the music on the node

@@ -3,17 +3,19 @@ package omniserver.demo.callabletask;
 import omniserver.demo.LogicLayer.NodeHttpRequests_Logic;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.concurrent.Callable;
 
-public class CallableWorker implements Callable<String>{
+public class CallableWorkerPlay implements Callable<String>{
 
 	String name;
-	
-	public CallableWorker(String name) {
+	List<String> nodeIps;
+	private NodeHttpRequests_Logic _nodeHttp = new NodeHttpRequests_Logic();
+
+	public CallableWorkerPlay(String name, List<String> nodeIps) {
 		this.name = name;
+		this.nodeIps =nodeIps;
 	}
 
 	@Override
@@ -23,10 +25,12 @@ public class CallableWorker implements Callable<String>{
 		return message;
 	}
 
-	private void process(){
-		for(int taskId=0; taskId < 10; taskId++){
-			String message = String.format("CallableWorker name: %s is processing a taskId: %d", name, taskId);
-			System.out.println(message);
+
+	private String process(){
+		try {
+			return _nodeHttp.StartMusic(nodeIps);
+		} catch (Exception e) {
+			return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
 		}
 	}
 	
