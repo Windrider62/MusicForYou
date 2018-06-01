@@ -1,5 +1,4 @@
 package omniserver.demo.DataLayer;
-
 import omniserver.demo.Models.RadioStationList;
 import omniserver.demo.Models.RadioStationModel;
 import omniserver.demo.fileEditor.PathConverter;
@@ -7,7 +6,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,7 +21,6 @@ public class WebRadio_Dal {
         path= PathConverter.StringConverter(path);
 
     }
-
     private  void readJsonRadioStations(){//read json file with radio stations to List<objects>
         JSONParser parser= new JSONParser();
         try{

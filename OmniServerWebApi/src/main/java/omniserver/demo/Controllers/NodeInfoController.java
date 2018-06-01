@@ -18,7 +18,7 @@ public class NodeInfoController {
 
     }
     @PostMapping("nodeinfo/addnode")
-    public boolean AddNewNode(@RequestBody Node node) throws IOException {
+    public Boolean AddNewNode(@RequestBody Node node) throws IOException {
         return _nodeLogic.AddNewNode(node);
 
     }

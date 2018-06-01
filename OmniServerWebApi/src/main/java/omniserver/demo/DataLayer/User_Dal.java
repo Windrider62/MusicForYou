@@ -1,13 +1,10 @@
 package omniserver.demo.DataLayer;
-
-import omniserver.demo.Models.RadioStationModel;
 import omniserver.demo.Models.UserModel;
 import omniserver.demo.fileEditor.PathConverter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,7 +18,7 @@ public class User_Dal {
         path= PathConverter.StringConverter(path);
 
     }
-    public boolean AutenticateUser(UserModel user){
+    public Boolean AutenticateUser(UserModel user){
         boolean acces=false;
         List<UserModel>Users= new ArrayList<>();
         JSONParser parser= new JSONParser();

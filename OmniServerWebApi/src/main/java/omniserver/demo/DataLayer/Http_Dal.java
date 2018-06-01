@@ -1,10 +1,9 @@
 package omniserver.demo.DataLayer;
-
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class Http_Dal {
-    public   String HttpGetMethod(String requestPath) throws Exception{// http get method to arduino
+    public String HttpGetMethod(String requestPath) throws Exception{// http get method to arduino
 
         URL url = new URL(requestPath);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
