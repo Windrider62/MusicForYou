@@ -60,6 +60,7 @@ public class WebRadio_Dal implements IWebRadio_Dal{
         return ListRadioNames;
     }
     public RadioStationModel GetRadioStationByName(String RadioStationName){//get the radio station object by name
+        readJsonRadioStations();
         RadioStationModel webRadio= new RadioStationModel();
         for ( RadioStationModel radio: radioList.RadioStations){
             if(radio.name.equals(RadioStationName)){

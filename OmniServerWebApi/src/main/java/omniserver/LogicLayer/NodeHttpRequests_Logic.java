@@ -1,5 +1,4 @@
 package omniserver.LogicLayer;
-import omniserver.DataLayer.Http_Dal;
 import omniserver.Interfaces.IHttp_Dal;
 import omniserver.Interfaces.IWebRadio_Dal;
 import omniserver.Models.RadioStationModel;
@@ -8,13 +7,14 @@ import java.util.List;
 
 public class NodeHttpRequests_Logic {
 
-     private static IHttp_Dal NodeHttp;
-     private static IWebRadio_Dal _radioDal;
-     private WebRadio_Logic webRadioLogic= new WebRadio_Logic(_radioDal);
+     private  IHttp_Dal NodeHttp;
+     private  IWebRadio_Dal _radioDal;
+     private WebRadio_Logic webRadioLogic;
 
      public NodeHttpRequests_Logic(IHttp_Dal http_dal, IWebRadio_Dal radioDal){
          NodeHttp=http_dal;
          _radioDal=radioDal;
+         webRadioLogic= new WebRadio_Logic(_radioDal);
      }
 
     public String StartMusic(List<String> nodeIpAdress)throws Exception{// starts music, only the  arduino ipadress is used
