@@ -1,0 +1,34 @@
+.col-sm-4 {
+    margin-top: 2%;
+    border-style: solid;
+    padding: 2%;
+    background-color: #cccccc;
+}
+
+ul {
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+li {
+    margin: 5px;
+    text-align: center;
+}
+
+/*.list-group-item:first-child {
+    border-top-left-radius: none !important;
+    border-top-right-radius: none !important;
+}*/
+
+#art {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+body {
+    padding: 2%;
+    background-color: #bbbbbb;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OmniSound</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="vslider.js"></script>
+</head>
+<body>
+<img src="img/logo.png" width="50" height="50" alt="OmniSound"><br>
+<div class="row">
+	
+	<div id="leftcolumn" class="col-sm-4">
+	  <a href="#">Spotify</a><br>
+	  <a href="#">Radio</a><br>
+	  <a href="#">Settings</a><br>
+	  <a href="#">Logout</a>
+	</div>
+
+	<div id="centercolumn" class="col-sm-4">
+		<div class="container">
+		  	<img id="art" align="center" src="img/art.jpg" height="250" width="250"><br>
+			<h4 id="song" align="center">Artist-<span id="title-song">Title</span></h4><br>
+			<div align="center">
+			<input type="image" src="img/previous.png" height="75" width="75">
+			<input type="image" src="img/play.png" height="75" width="75">
+			<input type="image" src="img/next.png" height="75" width="75">
+			</div>
+		</div>
+	</div>
+
+	<div id="rightcolumn" class="col-sm-4">
+		<ul class="list-group">
+			<li class="list-group-item">Player 1  <input id="vol-control1" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input></li>
+			<li class="list-group-item">Player 2  <input id="vol-control2" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input></li>
+			<li class="list-group-item">Player 3  <input id="vol-control3" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input></li>
+			<li class="list-group-item">Player 4  <input id="vol-control4" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input></li>
+			<li class="list-group-item">Player 5  <input id="vol-control5" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input></li>
+		</ul>
+	</div>
+
+</div>
+
+
+</body>
+</html>
