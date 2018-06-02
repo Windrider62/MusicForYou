@@ -1,6 +1,8 @@
-package omniserver.demo.callabletask;
+package omniserver.callabletask;
 
-import omniserver.demo.LogicLayer.NodeHttpRequests_Logic;
+import omniserver.DataLayer.Http_Dal;
+import omniserver.DataLayer.WebRadio_Dal;
+import omniserver.LogicLayer.NodeHttpRequests_Logic;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -11,7 +13,9 @@ public class CallableWorkerPlay implements Callable<String>{
 
 	String name;
 	List<String> nodeIps;
-	private NodeHttpRequests_Logic _nodeHttp = new NodeHttpRequests_Logic();
+	private Http_Dal _httpDal= new Http_Dal();
+	private WebRadio_Dal _radioDal= new WebRadio_Dal();
+	private NodeHttpRequests_Logic _nodeHttp = new NodeHttpRequests_Logic(_httpDal, _radioDal);
 
 	public CallableWorkerPlay(String name, List<String> nodeIps) {
 		this.name = name;

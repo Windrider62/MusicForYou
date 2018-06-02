@@ -1,4 +1,4 @@
-package omniserver.demo.fileEditor;
+package omniserver.fileEditor;
 
 
 import java.io.File;

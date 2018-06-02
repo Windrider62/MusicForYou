@@ -2,52 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b8e5545-a06a-46c0-b04c-710a67e44dcd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Interfaces/IHttp_Dal.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Interfaces/INodeInfo_Dal.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Interfaces/IUser_Dal.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Interfaces/IWebRadio_Dal.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFiles/RadioStationsTest.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFiles/UsersTest.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFiles/nodeConfigTest.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFolder/Http_Dal_Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFolder/NodeInfo_Dal_Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFolder/User_Dal_Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFolder/WebRadio_Dal_Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/WebRadio_LogicTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" afterPath="$PROJECT_DIR$/demo.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/NodeInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeInfoController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/NodeMusicOperationController.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/RadioStationController.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Controllers/RadioStationController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/ThreadController.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Controllers/ThreadController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Controllers/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/DataLayer/Http_Dal.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/DataLayer/Http_Dal.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/DataLayer/NodeInfo_Dal.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/DataLayer/NodeInfo_Dal.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/DataLayer/User_Dal.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/DataLayer/User_Dal.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/DataLayer/WebRadio_Dal.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/DataLayer/WebRadio_Dal.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/LogicLayer/NodeHttpRequests_Logic.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/LogicLayer/NodeHttpRequests_Logic.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/LogicLayer/NodeInfo_Logic.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/LogicLayer/NodeInfo_Logic.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/LogicLayer/User_Logic.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/LogicLayer/User_Logic.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/LogicLayer/WebRadio_Logic.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/LogicLayer/WebRadio_Logic.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/MainProgramConfig.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/MainProgramConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Models/Node.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Models/Node.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Models/NodeList.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Models/NodeList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Models/RadioStationList.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Models/RadioStationList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Models/RadioStationModel.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Models/RadioStationModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/Models/UserModel.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Models/UserModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/ObjectFiles/RadioStations.json" afterPath="$PROJECT_DIR$/src/main/java/omniserver/ObjectFiles/RadioStations.json" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/ObjectFiles/Users.json" afterPath="$PROJECT_DIR$/src/main/java/omniserver/ObjectFiles/Users.json" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/ObjectFiles/nodeConfig.json" afterPath="$PROJECT_DIR$/src/main/java/omniserver/ObjectFiles/nodeConfig.json" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/callabletask/CallableWorker.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorker.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/callabletask/CallableWorkerPlay.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorkerPlay.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/fileEditor/PathConverter.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/fileEditor/PathConverter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/fileEditor/WriteFile.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/fileEditor/WriteFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/demo/pool/ThreadPoolConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/pool/ThreadPoolConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFiles/nodeConfigTest.json" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFiles/nodeConfigTest.json" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorker.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorker.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorkerPlay.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorkerPlay.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/fileEditor/PathConverter.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/fileEditor/PathConverter.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/fileEditor/WriteFile.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/fileEditor/WriteFile.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/pool/ThreadPoolConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/pool/ThreadPoolConfiguration.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -715,7 +675,7 @@
       <workItem from="1527343474376" duration="368000" />
       <workItem from="1527527248294" duration="274000" />
       <workItem from="1527680131453" duration="700000" />
-      <workItem from="1527933008129" duration="10924000" />
+      <workItem from="1527933008129" duration="10941000" />
     </task>
     <servers />
   </component>
@@ -752,7 +712,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32210000" />
+    <option name="totallyTimeSpent" value="32227000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -765,7 +725,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -785,12 +744,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14977974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24889868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24889868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15245202" sideWeight="0.77272725" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15245202" sideWeight="0.77422905" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15245202" sideWeight="0.22727273" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15245202" sideWeight="0.22577092" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />

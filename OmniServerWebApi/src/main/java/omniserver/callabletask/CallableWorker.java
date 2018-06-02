@@ -1,11 +1,5 @@
-package omniserver.demo.callabletask;
+package omniserver.callabletask;
 
-import omniserver.demo.LogicLayer.NodeHttpRequests_Logic;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-
-import java.util.List;
 import java.util.concurrent.Callable;
 
 public class CallableWorker implements Callable<String>{
