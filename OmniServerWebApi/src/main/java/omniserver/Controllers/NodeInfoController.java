@@ -14,13 +14,14 @@ public class NodeInfoController {
     private NodeInfo_Dal _dal= new NodeInfo_Dal();
     private NodeInfo_Logic _nodeLogic= new NodeInfo_Logic(_dal);
 
+
     @GetMapping("nodeinfo/getnodes")
     public List<Node> getAllNodes(){
         return _nodeLogic.GetAllNodes();
 
     }
     @PostMapping("nodeinfo/addnode")
-    public Boolean AddNewNode(@RequestBody Node node) throws IOException {
+    public Boolean AddNewNode(@RequestBody Node node){
         return _nodeLogic.AddNewNode(node);
 
     }
