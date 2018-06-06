@@ -20,14 +20,14 @@
      
     // These are the pins used
     #define VS1053_RESET   4     // VS1053 reset pin (not used!)
-    #define VS1053_CS      2     // VS1053 chip select pin (output)
-    #define VS1053_DCS     0     // VS1053 Data/command select pin (output)
+    #define VS1053_CS      15     // VS1053 chip select pin (output)
+    #define VS1053_DCS     16     // VS1053 Data/command select pin (output)
     //#define VS1053_CARDCS A0     // Card chip select pin
     #define VS1053_DREQ     5     // VS1053 Data request, ideally an Interrupt pin
     // swSPI: Adafruit_VS1053::Adafruit_VS1053(mosi, miso, clk, rst, cs, dcs, dreq)
     // hwSPI: Adafruit_VS1053::Adafruit_VS1053(rst, cs, dcs, dreq)
-    //Adafruit_VS1053 musicPlayer =  Adafruit_VS1053(VS1053_RESET, VS1053_CS, VS1053_DCS, VS1053_DREQ);
-    Adafruit_VS1053 musicPlayer =  Adafruit_VS1053(12,13,14,VS1053_RESET, VS1053_CS, VS1053_DCS, VS1053_DREQ);
+    Adafruit_VS1053 musicPlayer =  Adafruit_VS1053(VS1053_RESET, VS1053_CS, VS1053_DCS, VS1053_DREQ);
+    //Adafruit_VS1053 musicPlayer =  Adafruit_VS1053(12,13,14,VS1053_RESET, VS1053_CS, VS1053_DCS, VS1053_DREQ);
 
 
     //Ricks aansluiting
@@ -52,10 +52,10 @@
 
 
     //global propeties
-    //char* ssid     = "{unknown}";
-    //const char* password = "jkw829kw91&";
-    char* ssid     = "WNDR-XACT2";
-    const char* password = "vanillaraccoon554";
+    char* ssid     = "{unknown}";
+    const char* password = "jkw829kw91&";
+    //char* ssid     = "WNDR-XACT2";
+    //const char* password = "vanillaraccoon554";
     String host = "icecast.omroep.nl";
     String path = "/3fm-bb-mp3";
     int httpPort = 80;
@@ -73,9 +73,9 @@
     Serial.begin(115200);
     
     // Set WiFi to station mode and disconnect from an AP if it was previously connected
-    WiFi.mode(WIFI_STA);
-    WiFi.disconnect();
-    delay(100);
+    //WiFi.mode(WIFI_STA);
+    //WiFi.disconnect();
+   // delay(100);
 
 
        //connect to the network with the ssid and the password
@@ -96,11 +96,11 @@
        MusicPlayerSetup();
           
        // wifi connection for hhtp requests
-//       WiFi.begin(ssid,password);
-//       while(WiFi.status() != WL_CONNECTED){
-//       delay(500);
-//       Serial.println(".");
-//       }
+       WiFi.begin(ssid,password);
+       while(WiFi.status() != WL_CONNECTED){
+       delay(500);
+       Serial.println(".");
+       }
        Serial.println("Connected!");
 
        //http server start
@@ -116,8 +116,7 @@
     }   
 void loop(void) {
 // handle the http requests
- //musicPlayer.sineTest(0x44, 500);
-     server.handleClient();
+     server.handleClient(); 
      
 // our little buffer of mp3 data
     uint8_t mp3buff[32];   // vs1053 likes 32 bytes at a time
@@ -142,36 +141,31 @@ void loop(void) {
         }
       }
     }
-
-    
 void MusicPlayerSetup(){
     if (!client.connect(host, httpPort)) {
         Serial.println("Connection failed");
         return;
       }
-        Serial.println("musicplayer...");     
-  if (!musicPlayer.begin()) { // initialise the music player
-         Serial.println("Couldn't find VS1053, do you have the right pins defined?"); 
-      }
-      else
-      {
-       Serial.println("musicplayer connected!"); 
+      
+  if (! musicPlayer.begin()) { // initialise the music player
+         Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
+         while (1) delay(10);
       }
      
  // Make a tone to indicate VS1053 is working     
-// musicPlayer.sineTest(0x44, 500);    
+ //musicPlayer.sineTest(0x44, 500);    
       
 // Set volume for left, right channels. lower numbers == louder volume!
       musicPlayer.setVolume(lastvol, lastvol);
 
 
       Serial.print("Requesting URL: ");
-//      Serial.println(host+path);
+      Serial.println(host+path);
       
 // This will send the request to the server
-//      client.print(String("GET ") + path + " HTTP/1.1\r\n" +
-//                   "Host: " + host + "\r\n" + 
-//                   "Connection: close\r\n\r\n");
+      client.print(String("GET ") + path + " HTTP/1.1\r\n" +
+                   "Host: " + host + "\r\n" + 
+                   "Connection: close\r\n\r\n");
 }
 void OpenHomePage(){
   server.send(200, "text/plain", "hello are yah toking to me? tok tok");
