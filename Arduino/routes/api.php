@@ -17,5 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('store', 'GuzzlePostController@store');
-Route::get('index', 'GuzzlePostController@index');
+Route::post('/player', [ 'uses' => 'DataController@postStop', ]);
