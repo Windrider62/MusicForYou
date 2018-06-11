@@ -10,6 +10,14 @@ use App\Http\Requests;
 class DataController extends Controller
 {
 
+    public function player()
+
+    {
+
+        return view('player');
+
+    }
+
 	public function getStationnames()
 
 	{
@@ -24,7 +32,7 @@ class DataController extends Controller
 
 	}
 
-		public function postVolume()
+	public function postVolume()
 
 	{
 
@@ -32,7 +40,9 @@ class DataController extends Controller
 		    'headers' => [ 'Content-Type' => 'application/json' ]
 		]);
 
-		$response = $client->post('http://localhost:8080/node/changevolume/30',
+		$input = request()->get('volume');
+
+		$response = $client->post('http://localhost:8080/node/changevolume/$volume',
 		    ['body' => json_encode(
 		        [
 		            'http://172.20.10.4', 'http://172.20.10.4',
@@ -44,22 +54,24 @@ class DataController extends Controller
 		echo '<pre>' . var_export($response->getStatusCode(), true) . '</pre>';
 		echo '<pre>' . var_export($response->getBody()->getContents(), true) . '</pre>';
 
-		return response()->json(array('response'=> $response), 200);
+		return $input;
 
 	}
 
-	public function postStation()
+	public function postStation(Request $request)
 
 	{
 
 		$client = new \GuzzleHttp\Client([
 		    'headers' => [ 'Content-Type' => 'application/json' ]
 		]);
+          
+		$input = request()->get('radio');
 
-		$response = $client->post('http://localhost:8080/node/changeradiostation/radio 1',
+		$response = $client->post('http://localhost:8080/node/changeradiostation/<? echo $input ?>',
 		    ['body' => json_encode(
 		        [
-		            'http://192.168.43.183', 'http://192.168.43.183',
+		            'http://172.20.10.4', 'http://172.20.10.4',
 
 		        ]
 		    )]
@@ -68,7 +80,7 @@ class DataController extends Controller
 		echo '<pre>' . var_export($response->getStatusCode(), true) . '</pre>';
 		echo '<pre>' . var_export($response->getBody()->getContents(), true) . '</pre>';
 
-		return response()->json(array('response'=> $response), 200);
+		return view('player@getStationnames', compact('response'));
 
 	}
 
@@ -91,7 +103,7 @@ class DataController extends Controller
 		echo '<pre>' . var_export($response->getStatusCode(), true) . '</pre>';
 		echo '<pre>' . var_export($response->getBody()->getContents(), true) . '</pre>';
 
-		return response()->json(array('response'=> $response), 200);
+		return view('player', compact('response'));
 
 	}
 
@@ -114,7 +126,7 @@ class DataController extends Controller
 		echo '<pre>' . var_export($response->getStatusCode(), true) . '</pre>';
 		echo '<pre>' . var_export($response->getBody()->getContents(), true) . '</pre>';
 
-		return response()->json(array('response'=> $response), 200);
+		return view('player', compact('response'));
 
 	}
 

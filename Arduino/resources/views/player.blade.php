@@ -4,6 +4,7 @@
 <script src="{{ asset('js/music.js') }}" defer></script>
  <meta name="csrf-token" content="{{ csrf_token() }}" />
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -12,18 +13,16 @@
                 <div class="row" style="margin-left:0px;margin-right:0px;">
                       <div id="leftcolumn" class="col-sm-4">                       
                         <div class="list-group" id="list-tab" role="tablist">
+                        {!! Form::open(array('action' => 'DataController@postStation', 'method' => 'POST', 'id' => '{{$post}}')) !!}
+                          @csrf
                         @foreach($response as $post)
-                        {!! Form::open(array('action' => 'DataController@postStation', 'method' => 'post')) !!}
-                          <a class="list-group-item list-group-item-action" onclick="window.location='{{action('DataController@postStation')}}'" data-toggle="list" href="{{$post}}" role="tab">{{$post}}</a>
+                          <input name="radio" type="submit" id="{{$post}}" value="{{$post}}" class="list-group-item list-group-item-action" role="tab"></input>
+                          @endforeach
                         {!! Form::close() !!}
-                        @endforeach
                         </div>
                       </div>
                     <div id="centercolumn" class="col-sm-4">
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane active" id="{{$post}}" role="tabpanel">
-                                <img id="art" align="center" src="{{ asset('images/art.jpg') }}" height="250" width="250"><br>
-                            </div>
                             <div align="center">
                             <form method="post">
                             @csrf
@@ -56,28 +55,49 @@
         </div>
     </div>
 </div>
-<script>
-    $('#myList a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
 
-    $(document).ready(function () {
+
+
+<script type="text/javascript">
+
 
     $.ajaxSetup({
+
         headers: {
+
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+
         }
+
     });
 
-$.ajax({
-    url: '/station',
-    type: 'POST',
-    dataType: 'JSON',
-    data: $('form').serialize()
-});
 
-});
+    $(".list-group-item.list-group-item-action").click(function(e){
+
+        e.preventDefault();
+
+
+        var radio = $("input[name=radio]").val();
+        var radio = $("input[name=volume]").val();
+
+        $.ajax({
+
+           type:'POST',
+
+           url:'/player',
+
+           data:{radio:radio, volume:volume},
+
+           success:function(data){
+
+              alert(data.success);
+
+           }
+
+        });
+
+
+    });
 
 </script>
 @endsection

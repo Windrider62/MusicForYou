@@ -25,7 +25,8 @@ Route::post('/player', 'DataController@postStart');
 
 Route::delete('/player', 'DataController@postStart');
 
-Route::post('/stop', 'DataController@postStop');
+Route::post('/player', 'DataController@postStop');
+Route::post('/player', 'DataController@postStation');
 
 Route::delete('/stop','DataController@postStop');
 
@@ -33,8 +34,6 @@ Route::post('/volume', 'DataController@postVolume');
 
 Route::delete('/volume','DataController@postVolume');
 
-Route::post('/station', 'DataController@postStation');
 
-Route::delete('/station','DataController@postStation');
 // Route::get('/player', 'DataController@postVolume');
 
