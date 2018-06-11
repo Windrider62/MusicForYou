@@ -80,7 +80,7 @@ class DataController extends Controller
 		echo '<pre>' . var_export($response->getStatusCode(), true) . '</pre>';
 		echo '<pre>' . var_export($response->getBody()->getContents(), true) . '</pre>';
 
-		return view('player@getStationnames', compact('response'));
+		return view('player', compact('response'));
 
 	}
 
