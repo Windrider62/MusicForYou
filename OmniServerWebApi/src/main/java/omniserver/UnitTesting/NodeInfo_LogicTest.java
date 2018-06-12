@@ -19,9 +19,6 @@ public class NodeInfo_LogicTest {
        assertEquals(true, nodeList.size()>0);
     }
 
-
-
-
     @Test
     public void addNewNode() {
         Node node=new Node();
