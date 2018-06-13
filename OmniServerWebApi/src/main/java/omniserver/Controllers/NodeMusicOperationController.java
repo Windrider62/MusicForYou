@@ -5,6 +5,7 @@ import omniserver.DataLayer.Http_Dal;
 import omniserver.DataLayer.WebRadio_Dal;
 import omniserver.LogicLayer.NodeHttpRequests_Logic;
 import omniserver.callabletask.CallableWorkerPlay;
+import omniserver.callabletask.CallableWorkerStop;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,21 +33,20 @@ public class NodeMusicOperationController {
 
     @PostMapping("/node/start")//starts the music on the node
     public void startMusic(@RequestBody List<String> nodeIps)  {
-    threadNumber++;
-    CallableWorkerPlay callableTask = new CallableWorkerPlay(String.valueOf(threadNumber),nodeIps);
-    Future<String> result = threadPool.submit(callableTask);
-    futureList.add(result);
+        threadNumber++;
+        CallableWorkerPlay callableTask = new CallableWorkerPlay(String.valueOf(threadNumber),nodeIps);
+        Future<String> result = threadPool.submit(callableTask);
+        futureList.add(result);
     }
 
     @PostMapping("/node/stop")// stop the music on the node
-    public String StopMusic(@RequestBody List<String> nodeIps)  {
-
-        try {
-            return _nodeHttp.StopMusic(nodeIps);
-        } catch (Exception e) {
-            return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
-        }
+    public void StopMusic(@RequestBody List<String> nodeIps)  {
+        threadNumber++;
+        CallableWorkerStop callableTask = new CallableWorkerStop(String.valueOf(threadNumber),nodeIps);
+        Future<String> result = threadPool.submit(callableTask);
+        futureList.add(result);
     }
+
     @PostMapping("/node/changevolume/{volume}")
     public String MusicVolume(@RequestBody List<String> nodeIps, @PathVariable("volume") int volume) throws Exception {
 

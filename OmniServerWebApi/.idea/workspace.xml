@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b8e5545-a06a-46c0-b04c-710a67e44dcd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorkerStop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +36,7 @@
       <file leaf-file-name="NodeInfoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="306">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -43,12 +45,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WriteFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/fileEditor/WriteFile.java">
+      <file leaf-file-name="NodeMusicOperationController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="238">
+              <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,7 +60,7 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="221">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
@@ -66,7 +70,7 @@
       <file leaf-file-name="NodeInfo_LogicTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="221">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
@@ -76,7 +80,7 @@
       <file leaf-file-name="User_LogicTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="255">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
@@ -86,61 +90,41 @@
       <file leaf-file-name="WebRadio_LogicTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/WebRadio_LogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
+            <state relative-caret-position="68">
               <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User_Logic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/LogicLayer/User_Logic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#307#308#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User_Dal.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User_Dal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/DataLayer/User_Dal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="323">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONParser.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
+      <file leaf-file-name="ThreadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/ThreadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5720">
-              <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
-                <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1527015077129" expanded="false" signature="146:361" ph="..." />
-                <marker date="1527015077129" expanded="true" signature="936:943" ph="{}" />
-                <marker date="1527015077129" expanded="true" signature="996:1181" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="1207:1306" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="1341:1402" ph="{...}" />
-                <marker date="1527015077129" expanded="false" signature="1432:1443" ph=" { " />
-                <marker date="1527015077129" expanded="false" signature="1475:1481" ph=" }" />
-                <marker date="1527015077129" expanded="true" signature="1539:1600" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="1693:1939" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="2011:2073" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="2180:8746" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="8812:8961" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="9036:9269" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="9344:9575" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="9662:9715" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="9820:10049" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="10150:10204" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="10323:18033" ph="{...}" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CallableWorkerStop.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorkerStop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,39 +132,9 @@
       <file leaf-file-name="Yylex.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/Yylex.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6526">
+            <state relative-caret-position="4267">
               <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-              <folding>
-                <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1527015077129" expanded="false" signature="146:251" ph="..." />
-                <marker date="1527015077129" expanded="true" signature="6362:6868" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="6949:7356" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="7400:7864" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="7945:8175" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="8222:8543" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="8627:9034" ph="{...}" />
-                <marker date="1527015077129" expanded="false" signature="9057:9068" ph=" { " />
-                <marker date="1527015077129" expanded="false" signature="9087:9093" ph=" }" />
-                <marker date="1527015077129" expanded="true" signature="9116:9292" ph="{...}" />
-                <marker date="1527015077129" expanded="false" signature="9319:9330" ph=" { " />
-                <marker date="1527015077129" expanded="false" signature="9372:9378" ph=" }" />
-                <marker date="1527015077129" expanded="true" signature="9434:9847" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="9899:11020" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="11073:11235" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="11282:11565" ph="{...}" />
-                <marker date="1527015077129" expanded="false" signature="11597:11608" ph=" { " />
-                <marker date="1527015077129" expanded="false" signature="11635:11641" ph=" }" />
-                <marker date="1527015077129" expanded="false" signature="11686:11697" ph=" { " />
-                <marker date="1527015077129" expanded="false" signature="11728:11734" ph=" }" />
-                <marker date="1527015077129" expanded="true" signature="11769:11873" ph="{...}" />
-                <marker date="1527015077129" expanded="false" signature="11914:11925" ph=" { " />
-                <marker date="1527015077129" expanded="false" signature="11970:11976" ph=" }" />
-                <marker date="1527015077129" expanded="false" signature="12009:12020" ph=" { " />
-                <marker date="1527015077129" expanded="false" signature="12063:12069" ph=" }" />
-                <marker date="1527015077129" expanded="true" signature="12115:12347" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="12388:12515" ph="{...}" />
-                <marker date="1527015077129" expanded="true" signature="12579:17765" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -212,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/omniserver/demo/LogicLayer/User_Logic.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/RadioStationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/demo/Controllers/NodeMusicOperationController.java" />
@@ -254,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/main/java/omniserver/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/MainProgramConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/Controllers/RadioStationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/Controllers/ThreadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/Controllers/UserController.java" />
@@ -263,6 +215,8 @@
         <option value="$PROJECT_DIR$/src/main/java/omniserver/ObjectFiles/nodeConfig.json" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorkerStop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java" />
       </list>
     </option>
   </component>
@@ -305,7 +259,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -417,12 +371,13 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -463,7 +418,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="omniserver" type="462c0819:PsiDirectoryNode" />
+              <item name="callabletask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OmniServerWebApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="omniserver" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OmniServerWebApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="omniserver" type="462c0819:PsiDirectoryNode" />
+              <item name="DataLayer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
@@ -494,10 +467,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,27 +500,23 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\glenn\Documents\proftaak3\MusicForYou\OmniServerWebApi\src\main\java\omniserver\TestFolder\Test_Files\TestFiles" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="omniserver.Interfaces" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\glenn\Documents\proftaak3\MusicForYou\OmniServerWebApi\src\main\java\omniserver\UnitTesting\Test_Files" />
       <recent name="C:\Users\glenn\Documents\proftaak3\MusicForYou\OmniServerWebApi\src\main\java\omniserver\Test_dataLayer" />
       <recent name="C:\Users\glenn\Documents\proftaak3\MusicForYou\OmniServerWebApi\src\main\java\omniserver\Interfaces" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="omniserver.callabletask" />
+      <recent name="omniserver.Interfaces" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\glenn\Documents\proftaak3\MusicForYou\OmniServerWebApi\src\main\java\omniserver\TestFolder\Test_Files\TestFiles" />
+    </key>
   </component>
   <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -561,25 +529,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.MainProgramConfig">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
+    <configuration name="MainProgramConfig" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="omniserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="omniserver.MainProgramConfig" />
+      <module name="demo" />
       <envs />
     </configuration>
     <configuration name="NodeInfo_LogicTest.addNewNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -682,6 +640,27 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -702,23 +681,18 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-    </configuration>
-    <configuration name="MainProgramConfig" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="omniserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="omniserver.MainProgramConfig" />
-      <module name="demo" />
-      <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -746,12 +720,6 @@
       <envs />
       <properties />
       <listeners />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.addNewNode" />
@@ -803,6 +771,7 @@
       <workItem from="1528801603965" duration="337000" />
       <workItem from="1528825655122" duration="4716000" />
       <workItem from="1528901356391" duration="310000" />
+      <workItem from="1528902815250" duration="230000" />
     </task>
     <servers />
   </component>
@@ -839,7 +808,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56279000" />
+    <option name="totallyTimeSpent" value="56509000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,7 +820,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -865,17 +834,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25330397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28414097" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24708377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24779736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23294243" sideWeight="0.74954295" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2328125" sideWeight="0.74954295" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15565032" sideWeight="0.25045705" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -884,6 +852,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28414097" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -947,13 +916,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTest_Methods/TestFolder/WebRadio_Dal_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeHttpRequests_LogicTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1124,18 +1086,10 @@
         <state relative-caret-position="78">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#242#243#0" expanded="false" />
+            <element signature="e#301#302#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/ThreadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,7 +1098,7 @@
         <state relative-caret-position="416">
           <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1165,13 +1119,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31-sources.jar!/org/apache/catalina/webresources/TomcatURLStreamHandlerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31-sources.jar!/org/apache/catalina/webresources/TomcatURLStreamHandlerFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/DataLayer/Http_Dal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -1207,14 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/ObjectFiles/nodeConfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1229,19 +1169,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/fileEditor/WriteFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="119">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
@@ -1249,77 +1179,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/LogicLayer/User_Logic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="153">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5720">
+        <state relative-caret-position="3740">
           <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-          <folding>
-            <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1527015077129" expanded="false" signature="146:361" ph="..." />
-            <marker date="1527015077129" expanded="true" signature="936:943" ph="{}" />
-            <marker date="1527015077129" expanded="true" signature="996:1181" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="1207:1306" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="1341:1402" ph="{...}" />
-            <marker date="1527015077129" expanded="false" signature="1432:1443" ph=" { " />
-            <marker date="1527015077129" expanded="false" signature="1475:1481" ph=" }" />
-            <marker date="1527015077129" expanded="true" signature="1539:1600" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="1693:1939" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="2011:2073" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="2180:8746" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="8812:8961" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="9036:9269" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="9344:9575" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="9662:9715" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="9820:10049" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="10150:10204" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="10323:18033" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/Yylex.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6526">
+        <state relative-caret-position="4267">
           <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-          <folding>
-            <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1527015077129" expanded="false" signature="146:251" ph="..." />
-            <marker date="1527015077129" expanded="true" signature="6362:6868" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="6949:7356" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="7400:7864" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="7945:8175" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="8222:8543" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="8627:9034" ph="{...}" />
-            <marker date="1527015077129" expanded="false" signature="9057:9068" ph=" { " />
-            <marker date="1527015077129" expanded="false" signature="9087:9093" ph=" }" />
-            <marker date="1527015077129" expanded="true" signature="9116:9292" ph="{...}" />
-            <marker date="1527015077129" expanded="false" signature="9319:9330" ph=" { " />
-            <marker date="1527015077129" expanded="false" signature="9372:9378" ph=" }" />
-            <marker date="1527015077129" expanded="true" signature="9434:9847" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="9899:11020" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="11073:11235" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="11282:11565" ph="{...}" />
-            <marker date="1527015077129" expanded="false" signature="11597:11608" ph=" { " />
-            <marker date="1527015077129" expanded="false" signature="11635:11641" ph=" }" />
-            <marker date="1527015077129" expanded="false" signature="11686:11697" ph=" { " />
-            <marker date="1527015077129" expanded="false" signature="11728:11734" ph=" }" />
-            <marker date="1527015077129" expanded="true" signature="11769:11873" ph="{...}" />
-            <marker date="1527015077129" expanded="false" signature="11914:11925" ph=" { " />
-            <marker date="1527015077129" expanded="false" signature="11970:11976" ph=" }" />
-            <marker date="1527015077129" expanded="false" signature="12009:12020" ph=" { " />
-            <marker date="1527015077129" expanded="false" signature="12063:12069" ph=" }" />
-            <marker date="1527015077129" expanded="true" signature="12115:12347" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="12388:12515" ph="{...}" />
-            <marker date="1527015077129" expanded="true" signature="12579:17765" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,7 +1212,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="221">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
@@ -1340,7 +1220,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="255">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
@@ -1348,7 +1228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="221">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
@@ -1356,7 +1236,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/WebRadio_LogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
+        <state relative-caret-position="68">
           <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
@@ -1364,9 +1244,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/DataLayer/User_Dal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="323">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/ThreadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/callabletask/CallableWorkerStop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeMusicOperationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
