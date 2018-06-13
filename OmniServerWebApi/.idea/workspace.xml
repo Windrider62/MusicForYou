@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b8e5545-a06a-46c0-b04c-710a67e44dcd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/ObjectFiles/nodeConfig.json" afterPath="$PROJECT_DIR$/src/main/java/omniserver/ObjectFiles/nodeConfig.json" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java" afterPath="$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +34,7 @@
       <file leaf-file-name="NodeInfoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="312">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,7 +46,7 @@
       <file leaf-file-name="WriteFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/fileEditor/WriteFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
+            <state relative-caret-position="182">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
@@ -69,7 +66,7 @@
       <file leaf-file-name="NodeInfo_LogicTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-226">
+            <state relative-caret-position="338">
               <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
@@ -79,17 +76,17 @@
       <file leaf-file-name="User_LogicTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebRadio_LogicTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebRadio_LogicTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/WebRadio_LogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="77">
               <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
@@ -108,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User_Dal.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="User_Dal.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/DataLayer/User_Dal.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
@@ -121,9 +118,29 @@
       <file leaf-file-name="JSONParser.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="5720">
               <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1527015077129" expanded="false" signature="146:361" ph="..." />
+                <marker date="1527015077129" expanded="true" signature="936:943" ph="{}" />
+                <marker date="1527015077129" expanded="true" signature="996:1181" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="1207:1306" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="1341:1402" ph="{...}" />
+                <marker date="1527015077129" expanded="false" signature="1432:1443" ph=" { " />
+                <marker date="1527015077129" expanded="false" signature="1475:1481" ph=" }" />
+                <marker date="1527015077129" expanded="true" signature="1539:1600" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="1693:1939" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="2011:2073" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="2180:8746" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="8812:8961" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="9036:9269" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="9344:9575" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="9662:9715" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="9820:10049" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="10150:10204" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="10323:18033" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,9 +148,39 @@
       <file leaf-file-name="Yylex.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/Yylex.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="6526">
               <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1527015077129" expanded="false" signature="146:251" ph="..." />
+                <marker date="1527015077129" expanded="true" signature="6362:6868" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="6949:7356" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="7400:7864" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="7945:8175" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="8222:8543" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="8627:9034" ph="{...}" />
+                <marker date="1527015077129" expanded="false" signature="9057:9068" ph=" { " />
+                <marker date="1527015077129" expanded="false" signature="9087:9093" ph=" }" />
+                <marker date="1527015077129" expanded="true" signature="9116:9292" ph="{...}" />
+                <marker date="1527015077129" expanded="false" signature="9319:9330" ph=" { " />
+                <marker date="1527015077129" expanded="false" signature="9372:9378" ph=" }" />
+                <marker date="1527015077129" expanded="true" signature="9434:9847" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="9899:11020" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="11073:11235" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="11282:11565" ph="{...}" />
+                <marker date="1527015077129" expanded="false" signature="11597:11608" ph=" { " />
+                <marker date="1527015077129" expanded="false" signature="11635:11641" ph=" }" />
+                <marker date="1527015077129" expanded="false" signature="11686:11697" ph=" { " />
+                <marker date="1527015077129" expanded="false" signature="11728:11734" ph=" }" />
+                <marker date="1527015077129" expanded="true" signature="11769:11873" ph="{...}" />
+                <marker date="1527015077129" expanded="false" signature="11914:11925" ph=" { " />
+                <marker date="1527015077129" expanded="false" signature="11970:11976" ph=" }" />
+                <marker date="1527015077129" expanded="false" signature="12009:12020" ph=" { " />
+                <marker date="1527015077129" expanded="false" signature="12063:12069" ph=" }" />
+                <marker date="1527015077129" expanded="true" signature="12115:12347" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="12388:12515" ph="{...}" />
+                <marker date="1527015077129" expanded="true" signature="12579:17765" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -258,7 +305,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -447,8 +494,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
@@ -513,7 +560,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WebRadio_LogicTest">
+  <component name="RunManager" selected="Spring Boot.MainProgramConfig">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -548,31 +595,6 @@
       <option name="PACKAGE_NAME" value="omniserver.UnitTesting" />
       <option name="MAIN_CLASS_NAME" value="omniserver.UnitTesting.NodeInfo_LogicTest" />
       <option name="METHOD_NAME" value="addNewNode" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="NodeInfo_LogicTest.getAllNodes (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="omniserver.UnitTesting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="demo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="omniserver.UnitTesting" />
-      <option name="MAIN_CLASS_NAME" value="omniserver.UnitTesting.NodeInfo_LogicTest" />
-      <option name="METHOD_NAME" value="getAllNodes" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -687,6 +709,17 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
+    <configuration name="MainProgramConfig" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="omniserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="omniserver.MainProgramConfig" />
+      <module name="demo" />
+      <envs />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -721,19 +754,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.getAllNodes (1)" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.addNewNode" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.renameNode" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.removeNode" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WebRadio_LogicTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.addNewNode" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.renameNode" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.removeNode" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WebRadio_LogicTest" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.MainProgramConfig" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WebRadio_LogicTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.removeNode" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.renameNode" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.addNewNode" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.getAllNodes (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.MainProgramConfig" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WebRadio_LogicTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.removeNode" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.renameNode" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.NodeInfo_LogicTest.addNewNode" />
       </list>
     </recent_temporary>
   </component>
@@ -768,14 +801,12 @@
       <workItem from="1528789733669" duration="3058000" />
       <workItem from="1528800430939" duration="843000" />
       <workItem from="1528801603965" duration="337000" />
-      <workItem from="1528825655122" duration="4118000" />
+      <workItem from="1528825655122" duration="4716000" />
+      <workItem from="1528901356391" duration="310000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NodeInfo_LogicTest_addNewNode - 2018.06.12 at 21h 31m 30s.xml">
-      <configuration name="NodeInfo_LogicTest.addNewNode" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="NodeInfo_LogicTest_getAllNodes_(1) - 2018.06.12 at 21h 31m 26s.xml">
       <configuration name="NodeInfo_LogicTest.getAllNodes (1)" configurationId="JUnit" />
     </history-entry>
@@ -797,6 +828,9 @@
     <history-entry file="WebRadio_LogicTest - 2018.06.12 at 21h 34m 18s.xml">
       <configuration name="WebRadio_LogicTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WebRadio_LogicTest - 2018.06.13 at 16h 49m 29s.xml">
+      <configuration name="WebRadio_LogicTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="WebRadio_LogicTest_getRadioStationByName - 2018.06.02 at 14h 28m 08s.xml">
       <configuration name="WebRadio_LogicTest.getRadioStationByName" configurationId="JUnit" />
     </history-entry>
@@ -805,7 +839,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55371000" />
+    <option name="totallyTimeSpent" value="56279000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,7 +851,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -836,9 +870,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28414097" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28414097" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24779736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24779736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23294243" sideWeight="0.74954295" order="0" side_tool="false" content_ui="combo" />
@@ -1073,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,7 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1152,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1160,9 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="1069" column="0" lean-forward="false" selection-start-line="1069" selection-start-column="0" selection-end-line="1069" selection-end-column="0" />
-          <folding>
-            <element signature="e#46741#46742#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1170,9 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
-          <folding>
-            <element signature="e#16715#16716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,13 +1226,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/Controllers/NodeInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="312">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1220,7 +1241,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/fileEditor/WriteFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="182">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
@@ -1236,27 +1257,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/DataLayer/User_Dal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="5720">
           <caret line="232" column="0" lean-forward="false" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1527015077129" expanded="false" signature="146:361" ph="..." />
+            <marker date="1527015077129" expanded="true" signature="936:943" ph="{}" />
+            <marker date="1527015077129" expanded="true" signature="996:1181" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="1207:1306" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="1341:1402" ph="{...}" />
+            <marker date="1527015077129" expanded="false" signature="1432:1443" ph=" { " />
+            <marker date="1527015077129" expanded="false" signature="1475:1481" ph=" }" />
+            <marker date="1527015077129" expanded="true" signature="1539:1600" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="1693:1939" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="2011:2073" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="2180:8746" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="8812:8961" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="9036:9269" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="9344:9575" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="9662:9715" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="9820:10049" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="10150:10204" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="10323:18033" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/Yylex.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
+        <state relative-caret-position="6526">
           <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1527015077129" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1527015077129" expanded="false" signature="146:251" ph="..." />
+            <marker date="1527015077129" expanded="true" signature="6362:6868" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="6949:7356" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="7400:7864" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="7945:8175" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="8222:8543" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="8627:9034" ph="{...}" />
+            <marker date="1527015077129" expanded="false" signature="9057:9068" ph=" { " />
+            <marker date="1527015077129" expanded="false" signature="9087:9093" ph=" }" />
+            <marker date="1527015077129" expanded="true" signature="9116:9292" ph="{...}" />
+            <marker date="1527015077129" expanded="false" signature="9319:9330" ph=" { " />
+            <marker date="1527015077129" expanded="false" signature="9372:9378" ph=" }" />
+            <marker date="1527015077129" expanded="true" signature="9434:9847" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="9899:11020" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="11073:11235" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="11282:11565" ph="{...}" />
+            <marker date="1527015077129" expanded="false" signature="11597:11608" ph=" { " />
+            <marker date="1527015077129" expanded="false" signature="11635:11641" ph=" }" />
+            <marker date="1527015077129" expanded="false" signature="11686:11697" ph=" { " />
+            <marker date="1527015077129" expanded="false" signature="11728:11734" ph=" }" />
+            <marker date="1527015077129" expanded="true" signature="11769:11873" ph="{...}" />
+            <marker date="1527015077129" expanded="false" signature="11914:11925" ph=" { " />
+            <marker date="1527015077129" expanded="false" signature="11970:11976" ph=" }" />
+            <marker date="1527015077129" expanded="false" signature="12009:12020" ph=" { " />
+            <marker date="1527015077129" expanded="false" signature="12063:12069" ph=" }" />
+            <marker date="1527015077129" expanded="true" signature="12115:12347" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="12388:12515" ph="{...}" />
+            <marker date="1527015077129" expanded="true" signature="12579:17765" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,15 +1340,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/User_LogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/NodeInfo_LogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
+        <state relative-caret-position="338">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
@@ -1294,8 +1356,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/UnitTesting/WebRadio_LogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
+        <state relative-caret-position="77">
           <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/omniserver/DataLayer/User_Dal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
