@@ -2,9 +2,7 @@
 
 @section('content')
 <script src="{{ asset('js/music.js') }}" defer></script>
- <meta name="csrf-token" content="{{ csrf_token() }}" />
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -13,31 +11,35 @@
                 <div class="row" style="margin-left:0px;margin-right:0px;">
                       <div id="leftcolumn" class="col-sm-4">                       
                         <div class="list-group" id="list-tab" role="tablist">
-                        {!! Form::open(array('action' => 'DataController@postStation', 'method' => 'POST', 'id' => '{{$post}}')) !!}
-                          @csrf
+                        {{ Form::open(array('action' => 'DataController@postStation')) }}
+                            {{ csrf_field() }}
                         @foreach($response as $post)
                           <input name="radio" type="submit" id="{{$post}}" value="{{$post}}" class="list-group-item list-group-item-action" role="tab"></input>
                           @endforeach
-                        {!! Form::close() !!}
+                        {{ Form::close() }}
                         </div>
                       </div>
                     <div id="centercolumn" class="col-sm-4">
                         <div class="tab-content" id="nav-tabContent">
                             <div align="center">
-                            <form method="post">
-                            @csrf
-                            <input type="image" onclick="window.location='{{action('DataController@postStart')}}'" src="{{ asset('images/play.png') }}" height="75" width="75">
-                            <input type="image" onclick="window.location='{{action('DataController@postStop')}}'" src="{{ asset('images/pause.png') }}" height="75" width="75">
-                                <input name="_token" type="hidden" id="_token" value="{{ csrf_token() }}" />
-                            </form>
+                           {{ Form::open(array('action' => 'DataController@postStop')) }}
+                                {{ csrf_field() }}
+                            <input type="image" src="{{ asset('images/pause.png') }}" height="75" width="75">
+                           {{ Form::close() }}
+
+                           {{ Form::open(array('action' => 'DataController@postStart')) }}
+                                {{ csrf_field() }}
+                            <input type="image" src="{{ asset('images/play.png') }}" height="75" width="75">
+                           {{ Form::close() }}
                             </div>
                         </div>
                     </div>
                     <div id="rightcolumn" class="col-sm-4">
                         {!! Form::open(array('action' => 'DataController@postVolume', 'method' => 'post')) !!}
+                            {{ csrf_field() }}
                         <ul class="list-group">
-                            <li class="list-group-item">{!! Form::range('volume', 'fewfwe') !!} </li>
-                            {{ Form::submit('Verstuur') }}
+                            <li class="list-group-item">{!! Form::range('volume', null, ['min'=>0,'max'=>150]) !!} </li>
+                        <input class="btn-click" type="submit"></input>
                         </ul> 
                         {!! Form::close() !!}
                     </form>
@@ -55,9 +57,6 @@
         </div>
     </div>
 </div>
-
-
-
 <script type="text/javascript">
 
 
@@ -78,15 +77,40 @@
 
 
         var radio = $("input[name=radio]").val();
+
+        $.ajax({
+
+           type:'POST',
+
+           url:'station',
+
+           data:{radio:radio},
+
+           success:function(data){
+
+              alert(data.success);
+
+           }
+
+        });
+
+
+    });
+
+        $(".btn-click").click(function(e){
+
+        e.preventDefault();
+
+
         var radio = $("input[name=volume]").val();
 
         $.ajax({
 
            type:'POST',
 
-           url:'/player',
+           url:'station',
 
-           data:{radio:radio, volume:volume},
+           data:{volume:volume},
 
            success:function(data){
 

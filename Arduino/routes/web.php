@@ -19,18 +19,19 @@ Auth::routes();
 
 Route::get('/player', 'HomeController@index')->name('player');
 
+Route::post('start',  array('uses' => 'DataController@postStart'));
+
 Route::get('/player', 'DataController@getStationnames');
 
-Route::post('/player', 'DataController@postStart');
+Route::delete('/start', 'DataController@postStart');
 
-Route::delete('/player', 'DataController@postStart');
+Route::post('stop', array('uses' => 'DataController@postStop'));
 
-Route::post('/player', 'DataController@postStop');
-Route::post('/player', 'DataController@postStation');
+Route::post('station',  array('uses' => 'DataController@postStation'));
 
 Route::delete('/stop','DataController@postStop');
 
-Route::post('/volume', 'DataController@postVolume');
+Route::post('volume', array('uses' => 'DataController@postVolume'));
 
 Route::delete('/volume','DataController@postVolume');
 
