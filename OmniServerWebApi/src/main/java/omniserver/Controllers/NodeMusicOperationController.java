@@ -6,6 +6,8 @@ import omniserver.DataLayer.WebRadio_Dal;
 import omniserver.LogicLayer.NodeHttpRequests_Logic;
 import omniserver.callabletask.CallableWorkerPlay;
 import omniserver.callabletask.CallableWorkerStop;
+import omniserver.callabletask.CallableWorkerVolume;
+import omniserver.callabletask.CallableWorkerChangeStation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -48,23 +50,19 @@ public class NodeMusicOperationController {
     }
 
     @PostMapping("/node/changevolume/{volume}")
-    public String MusicVolume(@RequestBody List<String> nodeIps, @PathVariable("volume") int volume) throws Exception {
-
-        try {
-            return _nodeHttp.MusicVolume(nodeIps, volume);
-        } catch (Exception e) {
-            return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
-        }
+    public void MusicVolume(@RequestBody List<String> nodeIps, @PathVariable("volume") int volume) throws Exception {
+        threadNumber++;
+        CallableWorkerVolume callableTask = new CallableWorkerVolume(String.valueOf(threadNumber),nodeIps,volume);
+        Future<String> result = threadPool.submit(callableTask);
+        futureList.add(result);
     }
 
     @PostMapping("/node/changeradiostation/{stationname}")
-    public String ChangeRadioStation(@RequestBody List<String> nodeIps,@PathVariable("stationname") String stationName) throws Exception {
-
-        try {
-            return _nodeHttp.ChangeRadioStation(nodeIps, stationName);
-        } catch (Exception e) {
-            return new ResponseEntity(HttpStatus.BAD_REQUEST).toString();
-        }
+    public void ChangeRadioStation(@RequestBody List<String> nodeIps,@PathVariable("stationname") String stationName) throws Exception {
+        threadNumber++;
+        CallableWorkerChangeStation callableTask = new CallableWorkerChangeStation(String.valueOf(threadNumber),nodeIps,stationName);
+        Future<String> result = threadPool.submit(callableTask);
+        futureList.add(result);
     }
 
 }
