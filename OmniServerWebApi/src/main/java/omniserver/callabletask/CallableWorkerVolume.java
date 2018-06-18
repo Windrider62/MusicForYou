@@ -32,7 +32,7 @@ public class CallableWorkerVolume implements Callable<String>{
 	}
 
 
-	private String process(){
+	private synchronized String process(){
 		try {
 			return _nodeHttp.MusicVolume(nodeIps, volume);
 		} catch (Exception e) {

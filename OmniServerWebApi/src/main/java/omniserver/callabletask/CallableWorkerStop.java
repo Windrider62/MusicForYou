@@ -30,7 +30,7 @@ public class CallableWorkerStop implements Callable<String>{
 	}
 
 
-	private String process(){
+	private synchronized String process(){
 		try {
 			return _nodeHttp.StopMusic(nodeIps);
 		} catch (Exception e) {
